@@ -122,7 +122,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
           </div>
           <button
             onClick={() => onNavigate('contact')}
-            className="px-5 py-2.5 rounded bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold uppercase tracking-wider whitespace-nowrap transition-colors"
+            className="w-full sm:w-auto px-6 py-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold uppercase tracking-wider whitespace-nowrap transition-colors min-h-[44px] flex items-center justify-center cursor-pointer shadow-md"
           >
             Consult With Our Engineers
           </button>

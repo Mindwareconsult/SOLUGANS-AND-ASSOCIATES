@@ -102,13 +102,13 @@ export const COMPANY_INFO = {
   // Verified Management & Key Technical Personnel (from Pages 35 & 157-194 of Profile)
   managementTeam: [
     {
-      name: 'Arc. Uganeme Emeka Donatus',
-      title: 'Managing Director / Chairman',
+      name: 'Arc. Uganeme Emeka John Donatus',
+      title: 'Managing Director / CEO',
       role: 'Principal Architect & Executive Lead',
       qualification: 'HND (Upper Credit) Architecture',
       institution: 'Federal Polytechnic Oko',
       experienceYears: 15,
-      image: '/src/assets/images/headshot_arc_uganeme_emeka_ceo.jpg',
+      image: '/SCEO.jpg',
       professionalBodies: ['Architect Graduates Association (Financial Secretary)'],
       bio: 'Visionary architect and founder of Solugans & Associates. Holds an Upper Credit Higher National Diploma in Architecture from Federal Polytechnic Oko (2010), completed NYSC service (2011–2012), and has steered the delivery of over 70 residential, commercial, and institutional projects across Nigeria.'
     },

@@ -307,7 +307,8 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onNavigate }) => {
                   setSelectedJob(null);
                   setApplicationSent(false);
                 }}
-                className="text-neutral-500 hover:text-white p-1"
+                className="text-neutral-400 hover:text-white p-2 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg hover:bg-neutral-900 transition-colors"
+                aria-label="Close modal"
               >
                 ✕
               </button>
@@ -328,7 +329,7 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onNavigate }) => {
                       setSelectedJob(null);
                       setApplicationSent(false);
                     }}
-                    className="px-6 py-2.5 rounded bg-neutral-800 text-white text-xs font-semibold uppercase tracking-wider hover:bg-neutral-700"
+                    className="w-full sm:w-auto px-6 py-3 rounded-lg bg-neutral-800 text-white text-xs font-semibold uppercase tracking-wider hover:bg-neutral-700 min-h-[44px]"
                   >
                     Close Window
                   </button>
@@ -346,7 +347,7 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onNavigate }) => {
                     value={applicantName}
                     onChange={(e) => setApplicantName(e.target.value)}
                     placeholder="Engr. / Arc. Full Name"
-                    className="w-full bg-neutral-900 border border-neutral-800 rounded px-3 py-2 text-sm text-white focus:border-orange-500 outline-none"
+                    className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white focus:border-orange-500 outline-none min-h-[44px]"
                   />
                 </div>
 
@@ -360,7 +361,7 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onNavigate }) => {
                     value={applicantEmail}
                     onChange={(e) => setApplicantEmail(e.target.value)}
                     placeholder="name@example.com"
-                    className="w-full bg-neutral-900 border border-neutral-800 rounded px-3 py-2 text-sm text-white focus:border-orange-500 outline-none"
+                    className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white focus:border-orange-500 outline-none min-h-[44px]"
                   />
                 </div>
 
@@ -374,7 +375,7 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onNavigate }) => {
                     value={applicantPhone}
                     onChange={(e) => setApplicantPhone(e.target.value)}
                     placeholder="+234 800 000 0000"
-                    className="w-full bg-neutral-900 border border-neutral-800 rounded px-3 py-2 text-sm text-white focus:border-orange-500 outline-none"
+                    className="w-full bg-neutral-900 border border-neutral-800 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white focus:border-orange-500 outline-none min-h-[44px]"
                   />
                 </div>
 
@@ -387,14 +388,14 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onNavigate }) => {
                     value={applicantNotes}
                     onChange={(e) => setApplicantNotes(e.target.value)}
                     placeholder="Briefly state your highest degree, years on site, major projects handled..."
-                    className="w-full bg-neutral-900 border border-neutral-800 rounded px-3 py-2 text-sm text-white focus:border-orange-500 outline-none resize-none"
+                    className="w-full bg-neutral-900 border border-neutral-800 rounded-lg p-3 text-base sm:text-sm text-white focus:border-orange-500 outline-none resize-none min-h-[85px]"
                   />
                 </div>
 
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="w-full py-3 bg-orange-600 hover:bg-orange-500 text-white rounded text-xs font-semibold uppercase tracking-wider transition-colors"
+                    className="w-full py-3.5 bg-orange-600 hover:bg-orange-500 text-white rounded-lg text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px] cursor-pointer"
                   >
                     Submit Preliminary Application
                   </button>

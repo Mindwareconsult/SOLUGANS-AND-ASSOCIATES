@@ -59,7 +59,20 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
     },
     {
       id: 2,
-      projectSlug: 'tubular-steel-space-frames-portfolio',
+      projectSlug: 'radopin-supermarket-awka',
+      image: '/src/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
+      discipline: 'COMMERCIAL ARCHITECTURE & RETAIL PLAZAS',
+      tagline: 'HIGH-VISIBILITY COMMERCIAL LANDMARKS',
+      headlineMain: 'Commercial Retail &',
+      headlineAccent: 'Urban Plazas.',
+      subtext: 'High-capacity retail shopping centers, corporate headquarters, and commercial complexes engineered for maximum footfall, structural longevity, and bold architectural presence along major transport corridors.',
+      projectTitle: 'Radopin Supermarket Plaza & Commercial Complex',
+      location: 'Aroma Junction, Awka',
+      specs: 'Wide-Span Concrete Frame · Composite Facade · Completed Register S/N 38'
+    },
+    {
+      id: 3,
+      projectSlug: 'tubular-steel-space-frames',
       image: '/src/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
       discipline: 'STRUCTURAL STEEL & SPACE FRAMES',
       tagline: 'WIDE-SPAN STRUCTURAL FABRICATION',
@@ -69,19 +82,6 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
       projectTitle: 'Tubular Steel Space Frame Roof Superstructure',
       location: 'Awka & Anambra State',
       specs: 'Circular Hollow Sections (CHS) · Welded Truss Nodes · High-Strength Bolting'
-    },
-    {
-      id: 3,
-      projectSlug: 'residential-buildings-portfolio',
-      image: '/src/assets/images/RESIDENTIAL BUILDING/residential building a.jpg',
-      discipline: 'CLASSICAL MONUMENTAL ARCHITECTURE',
-      tagline: 'HERITAGE CRAFT & STRUCTURAL FORTITUDE',
-      headlineMain: 'Enduring Estates.',
-      headlineAccent: 'Timeless Proportions.',
-      subtext: 'Harmonizing monumental neoclassical symmetry with modern tropical engineering. Executed with natural hand-dressed ashlar stone masonry, reinforced porticos, and engineered tubular steel roof trusses.',
-      projectTitle: 'Neoclassical Stately Country Mansion',
-      location: 'Anambra State',
-      specs: 'Fluted Column Colonnade · Stone Rustication · High-Pitch Hipped Slate'
     },
     {
       id: 4,
@@ -274,7 +274,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
 
             {/* Architectural Display Headline */}
             <div className="space-y-1">
-              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight font-display leading-[1.08] text-white">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight font-display leading-[1.12] sm:leading-[1.08] text-white">
                 <span className="block text-neutral-100">
                   {currentSlide.headlineMain}
                 </span>
@@ -285,7 +285,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
             </div>
 
             {/* Measured Architectural Narrative */}
-            <p className="text-sm sm:text-base lg:text-lg text-neutral-300 font-normal leading-relaxed max-w-2xl font-sans">
+            <p className="text-xs sm:text-base lg:text-lg text-neutral-300 font-normal leading-relaxed max-w-2xl font-sans">
               {currentSlide.subtext}
             </p>
 
@@ -294,7 +294,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
               {/* Primary High-Intent Button */}
               <button
                 onClick={onGetQuote}
-                className="w-full sm:w-auto px-6 py-3.5 sm:py-4 text-xs sm:text-sm font-semibold uppercase tracking-wider text-white bg-orange-600 hover:bg-orange-500 active:bg-orange-700 rounded-md transition-all shadow-xl shadow-orange-950/60 hover:shadow-orange-600/30 flex items-center justify-center gap-2 group cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full sm:w-auto px-6 py-3.5 sm:py-4 text-xs sm:text-sm font-semibold uppercase tracking-wider text-white bg-orange-600 hover:bg-orange-500 active:bg-orange-700 rounded-md transition-all shadow-xl shadow-orange-950/60 hover:shadow-orange-600/30 flex items-center justify-center gap-2 group cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-400 min-h-[44px]"
               >
                 <span>Request Project Proposal</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -303,7 +303,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
               {/* Secondary Case-Study Button */}
               <button
                 onClick={() => handleInspectProject(currentSlide.projectSlug)}
-                className="w-full sm:w-auto px-5 py-3.5 sm:py-4 text-xs sm:text-sm font-medium tracking-wide text-neutral-200 hover:text-white bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-700/80 rounded-md backdrop-blur-sm transition-colors flex items-center justify-center gap-2 cursor-pointer group"
+                className="w-full sm:w-auto px-5 py-3.5 sm:py-4 text-xs sm:text-sm font-medium tracking-wide text-neutral-200 hover:text-white bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-700/80 rounded-md backdrop-blur-sm transition-colors flex items-center justify-center gap-2 cursor-pointer group min-h-[44px]"
               >
                 <span>Inspect This Case Study</span>
                 <ArrowUpRight className="w-4 h-4 text-orange-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

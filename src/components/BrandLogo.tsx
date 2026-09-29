@@ -14,14 +14,14 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   showTagline = false,
 }) => {
   const sizeClasses = {
-    sm: 'h-9 w-9',
-    md: 'h-9 w-9 sm:h-12 sm:w-12',
-    lg: 'h-12 w-12 sm:h-14 sm:w-14',
-    xl: 'h-16 w-16 sm:h-20 sm:w-20',
+    sm: 'h-8 w-8 sm:h-9 sm:w-9',
+    md: 'h-8 w-8 sm:h-10 sm:w-10 lg:h-11 lg:w-11',
+    lg: 'h-11 w-11 sm:h-13 sm:w-13',
+    xl: 'h-14 w-14 sm:h-18 sm:w-18',
   };
 
   return (
-    <div className={`inline-flex items-center gap-2 sm:gap-3 select-none ${className}`}>
+    <div className={`flex items-center gap-2 sm:gap-2.5 lg:gap-3 select-none shrink-0 ${className}`}>
       {/* Authentic vector rendition of the Solugans & Associates cog & SU crest mark */}
       <svg
         viewBox="0 0 100 100"
@@ -119,16 +119,16 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       </svg>
 
       {/* Brand Typography Lockup */}
-      <div className="flex flex-col justify-center leading-none">
+      <div className="flex flex-col justify-center leading-none min-w-0">
         <span
-          className={`font-black tracking-tight font-display ${
+          className={`font-black tracking-tight font-display whitespace-nowrap truncate ${
             size === 'sm'
-              ? 'text-xs sm:text-sm'
+              ? 'text-[11px] sm:text-xs'
               : size === 'md'
-              ? 'text-sm sm:text-base md:text-lg'
+              ? 'text-[11px] xs:text-xs sm:text-sm lg:text-base xl:text-lg'
               : size === 'lg'
-              ? 'text-base sm:text-lg md:text-xl'
-              : 'text-xl sm:text-2xl'
+              ? 'text-sm sm:text-base lg:text-lg'
+              : 'text-lg sm:text-xl lg:text-2xl'
           } ${
             variant === 'color' ? 'text-[#f25c05]' : 'text-white'
           }`}
@@ -136,24 +136,24 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           SOLUGANS &amp; ASSOCIATES
         </span>
         <span
-          className={`font-bold tracking-wider ${
+          className={`font-bold tracking-wider whitespace-nowrap truncate mt-0.5 ${
             size === 'sm'
-              ? 'text-[9px] sm:text-[10px]'
+              ? 'text-[8px] sm:text-[9px]'
               : size === 'md'
-              ? 'text-[10px] sm:text-xs md:text-sm'
+              ? 'text-[8px] xs:text-[9px] sm:text-[10px] lg:text-xs'
               : size === 'lg'
-              ? 'text-xs sm:text-sm md:text-base'
-              : 'text-sm sm:text-base'
+              ? 'text-[10px] sm:text-xs'
+              : 'text-xs sm:text-sm'
           } ${
             variant === 'color'
-              ? 'text-neutral-900 dark:text-neutral-200'
+              ? 'text-neutral-200'
               : 'text-neutral-300'
           }`}
         >
           ENGINEERING LTD
         </span>
         {showTagline && (
-          <span className="text-[9px] uppercase tracking-widest text-neutral-400 mt-1 font-medium">
+          <span className="text-[8px] sm:text-[9px] uppercase tracking-widest text-neutral-400 mt-1 font-medium truncate">
             We Plan · We Design · We Build
           </span>
         )}

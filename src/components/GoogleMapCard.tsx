@@ -20,7 +20,7 @@ export const GoogleMapCard: React.FC = () => {
 
         {/* Pin Center Marker */}
         <div className="relative z-10 flex flex-col items-center">
-          <div className="w-12 h-12 rounded-full bg-orange-600/90 border-2 border-white shadow-2xl flex items-center justify-center text-white animate-bounce duration-1000">
+          <div className="w-12 h-12 rounded-full bg-orange-600/90 border-2 border-white shadow-2xl flex items-center justify-center text-white motion-safe:animate-pulse">
             <MapPin className="w-6 h-6" />
           </div>
           <div className="mt-2 bg-neutral-900/90 border border-neutral-700 px-3 py-1 rounded text-xs font-bold text-white shadow-lg backdrop-blur-md">

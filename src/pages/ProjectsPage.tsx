@@ -206,55 +206,55 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onSelectProject, onN
               </div>
 
               {/* Page Section Navigation Switcher */}
-              <div className="pt-2 flex flex-wrap gap-2">
+              <div className="pt-2 flex flex-col sm:flex-row sm:flex-wrap gap-2">
                 <button
                   onClick={() => {
                     setActiveSection('gallery');
                     galleryRef.current?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className={`px-4 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2 ${
+                  className={`w-full sm:w-auto px-4 py-3 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center sm:justify-start gap-2 min-h-[44px] ${
                     activeSection === 'gallery'
                       ? 'bg-orange-600 text-white shadow-lg shadow-orange-950/60'
                       : 'bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800'
                   }`}
                 >
-                  <Camera className="w-4 h-4" />
-                  <span>Real Project Photo Gallery ({PROJECT_GALLERY_DATA.length})</span>
+                  <Camera className="w-4 h-4 shrink-0" />
+                  <span>Real Photo Gallery ({PROJECT_GALLERY_DATA.length})</span>
                 </button>
 
                 <button
                   onClick={() => setActiveSection('case-studies')}
-                  className={`px-4 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2 ${
+                  className={`w-full sm:w-auto px-4 py-3 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center sm:justify-start gap-2 min-h-[44px] ${
                     activeSection === 'case-studies'
                       ? 'bg-orange-600 text-white shadow-lg shadow-orange-950/60'
                       : 'bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800'
                   }`}
                 >
-                  <LayoutGrid className="w-4 h-4" />
+                  <LayoutGrid className="w-4 h-4 shrink-0" />
                   <span>Documented Case Studies ({PROJECTS_DATA.length})</span>
                 </button>
 
                 <button
                   onClick={() => setActiveSection('completed-register')}
-                  className={`px-4 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2 ${
+                  className={`w-full sm:w-auto px-4 py-3 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center sm:justify-start gap-2 min-h-[44px] ${
                     activeSection === 'completed-register'
                       ? 'bg-orange-600 text-white shadow-lg shadow-orange-950/60'
                       : 'bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800'
                   }`}
                 >
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>Completed Projects Register (57)</span>
                 </button>
 
                 <button
                   onClick={() => setActiveSection('ongoing-register')}
-                  className={`px-4 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2 ${
+                  className={`w-full sm:w-auto px-4 py-3 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center sm:justify-start gap-2 min-h-[44px] ${
                     activeSection === 'ongoing-register'
                       ? 'bg-orange-600 text-white shadow-lg shadow-orange-950/60'
                       : 'bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800'
                   }`}
                 >
-                  <Clock className="w-4 h-4 text-amber-400" />
+                  <Clock className="w-4 h-4 text-amber-400 shrink-0" />
                   <span>Active Ongoing Register (20)</span>
                 </button>
               </div>

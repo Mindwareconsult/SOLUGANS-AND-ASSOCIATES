@@ -182,7 +182,7 @@ export const ContactForm: React.FC = () => {
             value={formData.fullName}
             onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
             placeholder="e.g. Chief Emeka Nnamdi"
-            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-md px-3.5 py-2.5 text-sm text-white placeholder-neutral-600 outline-none transition-colors"
+            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white placeholder-neutral-600 outline-none transition-colors min-h-[44px]"
           />
         </div>
 
@@ -196,7 +196,7 @@ export const ContactForm: React.FC = () => {
             value={formData.company}
             onChange={(e) => setFormData({ ...formData, company: e.target.value })}
             placeholder="e.g. Apex Holdings Ltd"
-            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-md px-3.5 py-2.5 text-sm text-white placeholder-neutral-600 outline-none transition-colors"
+            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white placeholder-neutral-600 outline-none transition-colors min-h-[44px]"
           />
         </div>
 
@@ -211,7 +211,7 @@ export const ContactForm: React.FC = () => {
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             placeholder="name@example.com"
-            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-md px-3.5 py-2.5 text-sm text-white placeholder-neutral-600 outline-none transition-colors"
+            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white placeholder-neutral-600 outline-none transition-colors min-h-[44px]"
           />
         </div>
 
@@ -226,7 +226,7 @@ export const ContactForm: React.FC = () => {
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             placeholder="+234 803 000 0000"
-            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-md px-3.5 py-2.5 text-sm text-white placeholder-neutral-600 outline-none transition-colors"
+            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white placeholder-neutral-600 outline-none transition-colors min-h-[44px]"
           />
         </div>
 
@@ -238,7 +238,7 @@ export const ContactForm: React.FC = () => {
           <select
             value={formData.projectType}
             onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-md px-3.5 py-2.5 text-sm text-white outline-none transition-colors"
+            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white outline-none transition-colors min-h-[44px] cursor-pointer"
           >
             {projectTypes.map((type) => (
               <option key={type} value={type}>
@@ -258,7 +258,7 @@ export const ContactForm: React.FC = () => {
             value={formData.location}
             onChange={(e) => setFormData({ ...formData, location: e.target.value })}
             placeholder="e.g. Awka, Anambra State"
-            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-md px-3.5 py-2.5 text-sm text-white placeholder-neutral-600 outline-none transition-colors"
+            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white placeholder-neutral-600 outline-none transition-colors min-h-[44px]"
           />
         </div>
 
@@ -270,7 +270,7 @@ export const ContactForm: React.FC = () => {
           <select
             value={formData.budgetRange}
             onChange={(e) => setFormData({ ...formData, budgetRange: e.target.value })}
-            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-md px-3.5 py-2.5 text-sm text-white outline-none transition-colors"
+            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white outline-none transition-colors min-h-[44px] cursor-pointer"
           >
             {budgetRanges.map((range) => (
               <option key={range} value={range}>
@@ -288,7 +288,7 @@ export const ContactForm: React.FC = () => {
           <select
             value={formData.timeline}
             onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
-            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-md px-3.5 py-2.5 text-sm text-white outline-none transition-colors"
+            className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white outline-none transition-colors min-h-[44px] cursor-pointer"
           >
             {timelines.map((time) => (
               <option key={time} value={time}>
@@ -310,15 +310,15 @@ export const ContactForm: React.FC = () => {
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
           placeholder="Describe your site status, architectural objectives, land size, or specific engineering requirements..."
-          className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-md p-3.5 text-sm text-white placeholder-neutral-600 outline-none transition-colors resize-y"
+          className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg p-3.5 text-base sm:text-sm text-white placeholder-neutral-600 outline-none transition-colors resize-y min-h-[110px]"
         />
       </div>
 
-      <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full sm:w-auto px-8 py-3.5 text-xs font-semibold uppercase tracking-wider text-white bg-orange-600 hover:bg-orange-500 disabled:opacity-50 rounded-md transition-all shadow-lg shadow-orange-950/50 flex items-center justify-center gap-2 cursor-pointer"
+          className="w-full sm:w-auto px-8 py-4 text-xs font-semibold uppercase tracking-wider text-white bg-orange-600 hover:bg-orange-500 active:bg-orange-700 disabled:opacity-50 rounded-lg transition-all shadow-lg shadow-orange-950/50 flex items-center justify-center gap-2 cursor-pointer min-h-[48px]"
         >
           {isSubmitting ? (
             <>

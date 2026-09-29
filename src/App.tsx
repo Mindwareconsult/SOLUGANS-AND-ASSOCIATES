@@ -11,6 +11,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
+import { ExecutiveLeadershipPage } from './pages/ExecutiveLeadershipPage';
 import { ServicesPage } from './pages/ServicesPage';
 import { ServiceDetailPage } from './pages/ServiceDetailPage';
 import { ProjectsPage } from './pages/ProjectsPage';
@@ -37,6 +38,14 @@ export default function App() {
 
       if (!hash || hash === 'home') {
         setCurrentRoute('home');
+      } else if (
+        hash === 'about/leadership' || 
+        hash === 'about/md-profile' || 
+        hash === 'about/executive' || 
+        hash === 'leadership' || 
+        hash === 'md-profile'
+      ) {
+        setCurrentRoute('about-leadership');
       } else if (hash === 'about') {
         setCurrentRoute('about');
       } else if (hash === 'services') {
@@ -156,6 +165,10 @@ export default function App() {
 
         {currentRoute === 'about' && (
           <AboutPage onNavigate={navigateTo} />
+        )}
+
+        {currentRoute === 'about-leadership' && (
+          <ExecutiveLeadershipPage onNavigate={navigateTo} />
         )}
 
         {currentRoute === 'services' && (

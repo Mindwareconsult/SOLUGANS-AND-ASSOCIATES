@@ -21,6 +21,7 @@ import {
   ArrowUpRight
 } from 'lucide-react';
 import { COMPANY_INFO, TeamMember } from '../data/company';
+import { EXECUTIVE_DATA } from '../data/executive';
 import { FAQSection } from '../components/FAQSection';
 
 interface AboutPageProps {
@@ -252,6 +253,104 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         </div>
       </section>
 
+      {/* 4B. Executive Leadership Preview: Meet Our Managing Director */}
+      <section className="py-20 lg:py-28 border-b border-neutral-900 bg-neutral-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-blueprint-grid opacity-[0.025] pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            {/* Left: Large Professional Portrait */}
+            <div className="lg:col-span-5">
+              <div 
+                onClick={() => onNavigate('about/leadership')}
+                className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl group cursor-pointer"
+              >
+                <img
+                  src={EXECUTIVE_DATA.image}
+                  alt={EXECUTIVE_DATA.fullName}
+                  className="w-full h-full object-cover object-top transform transition-transform duration-700 ease-out group-hover:scale-103"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent opacity-75 group-hover:opacity-60 transition-opacity" />
+                
+                <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-neutral-950/90 border border-neutral-800 text-[11px] font-mono text-orange-400 backdrop-blur-md">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
+                  <span>Executive Leadership</span>
+                </div>
+
+                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-neutral-950/90 backdrop-blur-md border border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-300">
+                  <span className="font-semibold text-white">Arc. Uganeme Emeka Donatus</span>
+                  <span className="text-orange-400 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform font-medium">
+                    <span>Inspect Profile</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Editorial Narrative & CTA */}
+            <div className="lg:col-span-7 space-y-6">
+              <div className="space-y-3">
+                <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-orange-500">
+                  <span className="w-2 h-0.5 bg-orange-500" />
+                  <span>{EXECUTIVE_DATA.aboutPreview.eyebrow}</span>
+                </div>
+
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight font-display">
+                  {EXECUTIVE_DATA.aboutPreview.heading}
+                </h2>
+
+                <p className="text-sm sm:text-base font-mono text-orange-400 font-medium italic">
+                  "{EXECUTIVE_DATA.aboutPreview.supportingQuote}"
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-neutral-800/80 space-y-1">
+                <h3 className="text-xl sm:text-2xl font-bold text-white font-display">
+                  {EXECUTIVE_DATA.fullName}
+                </h3>
+                <div className="text-xs sm:text-sm font-bold text-orange-400 font-display">
+                  {EXECUTIVE_DATA.formalTitle}
+                </div>
+                <div className="text-xs text-neutral-400 font-mono tracking-wide">
+                  {EXECUTIVE_DATA.professionalDesignations}
+                </div>
+              </div>
+
+              {/* Concise Preview Content (Exactly 2 short paragraphs as specified) */}
+              <div className="space-y-3 text-sm sm:text-base text-neutral-300 font-normal leading-relaxed font-sans">
+                <p>
+                  {EXECUTIVE_DATA.aboutPreview.shortBioPara1}
+                </p>
+                <p className="text-neutral-400 text-sm">
+                  {EXECUTIVE_DATA.aboutPreview.shortBioPara2}
+                </p>
+              </div>
+
+              {/* Prominent Primary CTA */}
+              <div className="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                <button
+                  onClick={() => onNavigate('about/leadership')}
+                  className="w-full sm:w-auto px-7 py-3.5 sm:py-4 rounded-lg bg-orange-600 hover:bg-orange-500 active:bg-orange-700 text-xs sm:text-sm font-semibold uppercase tracking-wider text-white transition-all shadow-xl shadow-orange-950/60 hover:shadow-orange-600/30 flex items-center justify-center gap-2.5 cursor-pointer group min-h-[44px]"
+                >
+                  <span>View Executive Profile</span>
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </button>
+
+                <button
+                  onClick={() => onNavigate('about/leadership')}
+                  className="w-full sm:w-auto px-5 py-3.5 sm:py-4 rounded-lg bg-neutral-900 hover:bg-neutral-800 text-xs sm:text-sm font-medium text-neutral-300 hover:text-white border border-neutral-800 transition-colors cursor-pointer flex items-center justify-center min-h-[44px]"
+                >
+                  Meet Our Managing Director
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* 5. Management & Key Technical Personnel (Verified Data from Pages 35 & 157-194) */}
       <section className="py-16 lg:py-24 border-b border-neutral-900 bg-neutral-900/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -269,10 +368,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             </div>
 
             {/* Segmented Team Switcher */}
-            <div className="inline-flex p-1 bg-neutral-900 border border-neutral-800 rounded-lg self-start md:self-auto">
+            <div className="flex flex-col sm:flex-row w-full sm:w-auto p-1 bg-neutral-900 border border-neutral-800 rounded-lg gap-1">
               <button
                 onClick={() => setActiveTeamTab('leadership')}
-                className={`px-4 py-2 text-xs font-medium rounded-md transition-colors cursor-pointer ${
+                className={`px-4 py-2.5 text-xs font-medium rounded-md transition-colors text-center cursor-pointer min-h-[40px] flex items-center justify-center ${
                   activeTeamTab === 'leadership'
                     ? 'bg-orange-600 text-white font-semibold'
                     : 'text-neutral-400 hover:text-white'
@@ -282,7 +381,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               </button>
               <button
                 onClick={() => setActiveTeamTab('field')}
-                className={`px-4 py-2 text-xs font-medium rounded-md transition-colors cursor-pointer ${
+                className={`px-4 py-2.5 text-xs font-medium rounded-md transition-colors text-center cursor-pointer min-h-[40px] flex items-center justify-center ${
                   activeTeamTab === 'field'
                     ? 'bg-orange-600 text-white font-semibold'
                     : 'text-neutral-400 hover:text-white'
@@ -356,6 +455,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                       <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-sans">
                         {member.bio}
                       </p>
+
+                      {member.name.includes('Uganeme') && (
+                        <div className="pt-2">
+                          <button
+                            onClick={() => onNavigate('about/leadership')}
+                            className="inline-flex items-center gap-1.5 text-xs font-semibold text-orange-400 hover:text-orange-300 transition-colors cursor-pointer group/link"
+                          >
+                            <span>Inspect Dedicated Executive Profile</span>
+                            <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
+                          </button>
+                        </div>
+                      )}
                     </div>
                   </div>
 
