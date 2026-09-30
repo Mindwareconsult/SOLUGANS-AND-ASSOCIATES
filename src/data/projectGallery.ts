@@ -116,7 +116,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 1. BASEMENT EXCAVATION (3 items)
   {
     id: 'base-exc-01',
-    src: '/src/assets/images/BASEMENT EXCAVATION/IMG_2744.JPG',
+    src: '/assets/images/BASEMENT EXCAVATION/IMG_2744.JPG',
     category: 'BASEMENT EXCAVATION',
     categoryKey: 'basement-excavation',
     title: 'Deep Basement Excavation & Site Formation',
@@ -127,7 +127,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'base-exc-02',
-    src: '/src/assets/images/BASEMENT EXCAVATION/IMG_2754.JPG',
+    src: '/assets/images/BASEMENT EXCAVATION/IMG_2754.JPG',
     category: 'BASEMENT EXCAVATION',
     categoryKey: 'basement-excavation',
     title: 'Earthworks & Perimeter Retention Cut',
@@ -138,7 +138,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'base-exc-03',
-    src: '/src/assets/images/BASEMENT EXCAVATION/IMG_2767.JPG',
+    src: '/assets/images/BASEMENT EXCAVATION/IMG_2767.JPG',
     category: 'BASEMENT EXCAVATION',
     categoryKey: 'basement-excavation',
     title: 'Sub-Grade Excavation Leveling',
@@ -151,7 +151,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 2. BUILDINGS UNDER CONSTRUCTION (6 items deduplicated)
   {
     id: 'buc-01-aguleri',
-    src: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg',
+    src: '/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg',
     category: 'BUILDINGS UNDER CONSTRUCTION',
     categoryKey: 'buildings-under-construction',
     title: 'Residential Country Home at Ameze Village, Aguleri',
@@ -162,7 +162,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'buc-02',
-    src: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3717.JPG',
+    src: '/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3717.JPG',
     category: 'BUILDINGS UNDER CONSTRUCTION',
     categoryKey: 'buildings-under-construction',
     title: 'Reinforced Concrete Superstructure Decking',
@@ -173,7 +173,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'buc-03',
-    src: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3718.JPG',
+    src: '/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3718.JPG',
     category: 'BUILDINGS UNDER CONSTRUCTION',
     categoryKey: 'buildings-under-construction',
     title: 'Slab Soffit Formwork & Shoring Inspection',
@@ -184,7 +184,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'buc-04',
-    src: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3747.JPG',
+    src: '/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3747.JPG',
     category: 'BUILDINGS UNDER CONSTRUCTION',
     categoryKey: 'buildings-under-construction',
     title: 'Multi-Storey Blockwork & Structural Envelope',
@@ -195,7 +195,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'buc-05',
-    src: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3760.JPG',
+    src: '/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3760.JPG',
     category: 'BUILDINGS UNDER CONSTRUCTION',
     categoryKey: 'buildings-under-construction',
     title: 'Facade Elevation & Scaffolding Staging',
@@ -206,7 +206,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'buc-06',
-    src: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3773.JPG',
+    src: '/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3773.JPG',
     category: 'BUILDINGS UNDER CONSTRUCTION',
     categoryKey: 'buildings-under-construction',
     title: 'Roof Deck Level Structural Frame',
@@ -219,7 +219,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 3. COMMERCIAL BUILDINGS (3 items)
   {
     id: 'com-01-radopin',
-    src: '/src/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
+    src: '/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
     category: 'COMMERCIAL BUILDINGS',
     categoryKey: 'commercial-buildings',
     title: 'Radopin Supermarket Plaza & Commercial Complex',
@@ -230,7 +230,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'com-02-cichotel',
-    src: '/src/assets/images/COMMERCIAL BUILDING/commercial_office_cichotel.jpg',
+    src: '/assets/images/COMMERCIAL BUILDING/commercial_office_cichotel.jpg',
     category: 'COMMERCIAL BUILDINGS',
     categoryKey: 'commercial-buildings',
     title: 'Cichotel Classique Commercial Extension',
@@ -241,7 +241,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'com-03-retail',
-    src: '/src/assets/images/COMMERCIAL BUILDING/commercial_retail_complex.jpg',
+    src: '/assets/images/COMMERCIAL BUILDING/commercial_retail_complex.jpg',
     category: 'COMMERCIAL BUILDINGS',
     categoryKey: 'commercial-buildings',
     title: 'Commercial Retail Plaza & Office Bays',
@@ -254,7 +254,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 4. EARTHING WORK ON REINFORCEMENT (2 items)
   {
     id: 'earth-01',
-    src: '/src/assets/images/EARTHING WORK ON REINFORCEMENT/IMG_20170819_114918.jpg',
+    src: '/assets/images/EARTHING WORK ON REINFORCEMENT/IMG_20170819_114918.jpg',
     category: 'EARTHING WORK ON REINFORCEMENT',
     categoryKey: 'earthing-work',
     title: 'Foundation Earthing Tape Bonding',
@@ -265,7 +265,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'earth-02',
-    src: '/src/assets/images/EARTHING WORK ON REINFORCEMENT/IMG_20180604_225902_298.jpg',
+    src: '/assets/images/EARTHING WORK ON REINFORCEMENT/IMG_20180604_225902_298.jpg',
     category: 'EARTHING WORK ON REINFORCEMENT',
     categoryKey: 'earthing-work',
     title: 'Structural Lightning Protection Integration',
@@ -278,7 +278,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 5. REINFORCEMENT WORKS (3 items)
   {
     id: 'reinf-01',
-    src: '/src/assets/images/REINFORCEMENT WORKS/IMG_6470.JPG',
+    src: '/assets/images/REINFORCEMENT WORKS/IMG_6470.JPG',
     category: 'REINFORCEMENT WORKS',
     categoryKey: 'reinforcement-works',
     title: 'Heavy Foundation Rebar Grid Assembly',
@@ -289,7 +289,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'reinf-02',
-    src: '/src/assets/images/REINFORCEMENT WORKS/IMG_6475.JPG',
+    src: '/assets/images/REINFORCEMENT WORKS/IMG_6475.JPG',
     category: 'REINFORCEMENT WORKS',
     categoryKey: 'reinforcement-works',
     title: 'Tensile Mat Steel Binding & Spacer Blocks',
@@ -300,7 +300,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'reinf-03',
-    src: '/src/assets/images/REINFORCEMENT WORKS/IMG_6566.JPG',
+    src: '/assets/images/REINFORCEMENT WORKS/IMG_6566.JPG',
     category: 'REINFORCEMENT WORKS',
     categoryKey: 'reinforcement-works',
     title: 'Suspended Slab Rebar Mat Rigging',
@@ -313,7 +313,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 6. REINFORCEMENT OF COLUMNS & BEAMS (12 items)
   {
     id: 'col-01',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6567.JPG',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6567.JPG',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Multi-Floor Column Starter Rebar Cages',
@@ -324,7 +324,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-02',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6568.JPG',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6568.JPG',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Beam-Column Moment Junction Rigging',
@@ -335,7 +335,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-03',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_1453.JPG',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_1453.JPG',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Deep Transfer Beam Reinforcement',
@@ -346,7 +346,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-04',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6899.JPG',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6899.JPG',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Cantilever & Edge Beam Shuttering and Steel',
@@ -357,7 +357,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-05',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170614_074320.jpg',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170614_074320.jpg',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Vertical Column Alignment & Link Spacing',
@@ -368,7 +368,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-06',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170727_094432.jpg',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170727_094432.jpg',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Continuous Floor Beam Longitudinal Bars',
@@ -379,7 +379,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-07',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170807_112153.jpg',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170807_112153.jpg',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Column Formwork Box Preparation',
@@ -390,7 +390,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-08',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170811_172534.jpg',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170811_172534.jpg',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Spandrel Beam Longitudinal Tying',
@@ -401,7 +401,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-09',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170812_103244.jpg',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170812_103244.jpg',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Main Grid Column Assembly',
@@ -412,7 +412,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-10',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170812_103254.jpg',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20170812_103254.jpg',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Corner Column Link Confinement Detailing',
@@ -423,7 +423,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-11',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20180327_090416.jpg',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20180327_090416.jpg',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Intermediate Floor Beam Reinforcement',
@@ -434,7 +434,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'col-12',
-    src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20180327_090437.jpg',
+    src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/20180327_090437.jpg',
     category: 'REINFORCEMENT OF COLUMNS & BEAMS',
     categoryKey: 'columns-beams',
     title: 'Beam Reinforcement & Embedment Inspection',
@@ -447,7 +447,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 7. RESIDENTIAL BUILDINGS (8 items)
   {
     id: 'res-01',
-    src: '/src/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
+    src: '/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
     category: 'RESIDENTIAL BUILDINGS',
     categoryKey: 'residential-buildings',
     title: 'Executive Residential Country Villa',
@@ -458,7 +458,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'res-02',
-    src: '/src/assets/images/RESIDENTIAL BUILDING/residential building a.jpg',
+    src: '/assets/images/RESIDENTIAL BUILDING/residential building a.jpg',
     category: 'RESIDENTIAL BUILDINGS',
     categoryKey: 'residential-buildings',
     title: 'Stately Residential Villa with Classical Portico',
@@ -469,7 +469,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'res-03',
-    src: '/src/assets/images/RESIDENTIAL BUILDING/residential building construction.jpg',
+    src: '/assets/images/RESIDENTIAL BUILDING/residential building construction.jpg',
     category: 'RESIDENTIAL BUILDINGS',
     categoryKey: 'residential-buildings',
     title: 'Luxury Duplex Structural Envelope',
@@ -480,7 +480,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'res-04',
-    src: '/src/assets/images/RESIDENTIAL BUILDING/IMG_6637.JPG',
+    src: '/assets/images/RESIDENTIAL BUILDING/IMG_6637.JPG',
     category: 'RESIDENTIAL BUILDINGS',
     categoryKey: 'residential-buildings',
     title: 'Residential Superstructure & Upper Level Parapet',
@@ -491,7 +491,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'res-05',
-    src: '/src/assets/images/RESIDENTIAL BUILDING/IMG_6916.JPG',
+    src: '/assets/images/RESIDENTIAL BUILDING/IMG_6916.JPG',
     category: 'RESIDENTIAL BUILDINGS',
     categoryKey: 'residential-buildings',
     title: 'Residential Estate Building Execution',
@@ -502,7 +502,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'res-06',
-    src: '/src/assets/images/RESIDENTIAL BUILDING/IMG_6952.JPG',
+    src: '/assets/images/RESIDENTIAL BUILDING/IMG_6952.JPG',
     category: 'RESIDENTIAL BUILDINGS',
     categoryKey: 'residential-buildings',
     title: 'Residential Blockwork & Window Openings',
@@ -513,7 +513,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'res-07',
-    src: '/src/assets/images/RESIDENTIAL BUILDING/IMG_6959.JPG',
+    src: '/assets/images/RESIDENTIAL BUILDING/IMG_6959.JPG',
     category: 'RESIDENTIAL BUILDINGS',
     categoryKey: 'residential-buildings',
     title: 'Perimeter Wall & Entrance Arch Staging',
@@ -524,7 +524,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'res-08',
-    src: '/src/assets/images/RESIDENTIAL BUILDING/IMG_6961.JPG',
+    src: '/assets/images/RESIDENTIAL BUILDING/IMG_6961.JPG',
     category: 'RESIDENTIAL BUILDINGS',
     categoryKey: 'residential-buildings',
     title: 'Residential Compound Hardscaping Preparation',
@@ -537,7 +537,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 8. RETAINING WALL WORK (1 item)
   {
     id: 'ret-01',
-    src: '/src/assets/images/RETAINING WALL WORK/team work.JPG',
+    src: '/assets/images/RETAINING WALL WORK/team work.JPG',
     category: 'RETAINING WALL WORK',
     categoryKey: 'retaining-wall-work',
     title: 'Engineering Team on Retaining Wall Construction',
@@ -550,7 +550,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 9. STAIRCASE CONSTRUCTION (2 items)
   {
     id: 'stair-01',
-    src: '/src/assets/images/STAIRCASE CONSTRUCTION/staircase_cantilever_foyer.jpg',
+    src: '/assets/images/STAIRCASE CONSTRUCTION/staircase_cantilever_foyer.jpg',
     category: 'STAIRCASE CONSTRUCTION',
     categoryKey: 'staircase-construction',
     title: 'Sculptural Cantilever Helical Concrete Staircase',
@@ -561,7 +561,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'stair-02',
-    src: '/src/assets/images/STAIRCASE CONSTRUCTION/staircase_helical_formwork.jpg',
+    src: '/assets/images/STAIRCASE CONSTRUCTION/staircase_helical_formwork.jpg',
     category: 'STAIRCASE CONSTRUCTION',
     categoryKey: 'staircase-construction',
     title: 'Helical Staircase Curved Formwork & Rebar',
@@ -574,7 +574,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 10. SUB-STRUCTURAL WORKS (FOUNDATION WORK) (3 items)
   {
     id: 'sub-01',
-    src: '/src/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3123.JPG',
+    src: '/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3123.JPG',
     category: 'SUB-STRUCTURAL WORKS — FOUNDATION',
     categoryKey: 'sub-structural-foundation',
     title: 'Raft Foundation Excavation & Blinding Preparation',
@@ -585,7 +585,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'sub-02',
-    src: '/src/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3124.JPG',
+    src: '/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3124.JPG',
     category: 'SUB-STRUCTURAL WORKS — FOUNDATION',
     categoryKey: 'sub-structural-foundation',
     title: 'Foundation Grade Beam Trenching',
@@ -596,7 +596,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'sub-03',
-    src: '/src/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3129.JPG',
+    src: '/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3129.JPG',
     category: 'SUB-STRUCTURAL WORKS — FOUNDATION',
     categoryKey: 'sub-structural-foundation',
     title: 'Sub-Structure Rebar Placement & Blinding Concrete',
@@ -609,7 +609,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   // 10. TUBULAR STEEL WORKS (8 items)
   {
     id: 'steel-01',
-    src: '/src/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
+    src: '/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
     category: 'TUBULAR STEEL WORKS',
     categoryKey: 'tubular-steel-works',
     title: 'Tubular Steel Space Frame Fabrication',
@@ -620,7 +620,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'steel-02',
-    src: '/src/assets/images/TUBULAR STEEL WORKS/20180717_101441.jpg',
+    src: '/assets/images/TUBULAR STEEL WORKS/20180717_101441.jpg',
     category: 'TUBULAR STEEL WORKS',
     categoryKey: 'tubular-steel-works',
     title: 'Roof Truss Hoisting & Bearing Plates',
@@ -631,7 +631,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'steel-03',
-    src: '/src/assets/images/TUBULAR STEEL WORKS/IMG_20180413_174309 (2).jpg',
+    src: '/assets/images/TUBULAR STEEL WORKS/IMG_20180413_174309 (2).jpg',
     category: 'TUBULAR STEEL WORKS',
     categoryKey: 'tubular-steel-works',
     title: 'Wide-Span Steel Truss Node Detailing',
@@ -642,7 +642,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'steel-04',
-    src: '/src/assets/images/TUBULAR STEEL WORKS/IMG_20180413_174313.jpg',
+    src: '/assets/images/TUBULAR STEEL WORKS/IMG_20180413_174313.jpg',
     category: 'TUBULAR STEEL WORKS',
     categoryKey: 'tubular-steel-works',
     title: 'Space Frame Lattice Alignment',
@@ -653,7 +653,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'steel-05',
-    src: '/src/assets/images/TUBULAR STEEL WORKS/IMG_20180719_000502_882.jpg',
+    src: '/assets/images/TUBULAR STEEL WORKS/IMG_20180719_000502_882.jpg',
     category: 'TUBULAR STEEL WORKS',
     categoryKey: 'tubular-steel-works',
     title: 'Overhead Canopy Steel Framing',
@@ -664,7 +664,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'steel-06',
-    src: '/src/assets/images/TUBULAR STEEL WORKS/IMG_20180719_000555_989.jpg',
+    src: '/assets/images/TUBULAR STEEL WORKS/IMG_20180719_000555_989.jpg',
     category: 'TUBULAR STEEL WORKS',
     categoryKey: 'tubular-steel-works',
     title: 'Tubular Steel Purlin Reticulation',
@@ -675,7 +675,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'steel-07',
-    src: '/src/assets/images/TUBULAR STEEL WORKS/IMG_20190213_005154_898.jpg',
+    src: '/assets/images/TUBULAR STEEL WORKS/IMG_20190213_005154_898.jpg',
     category: 'TUBULAR STEEL WORKS',
     categoryKey: 'tubular-steel-works',
     title: 'High-Level Steel Trusses In Situ',
@@ -686,7 +686,7 @@ export const PROJECT_GALLERY_DATA: ProjectGalleryItem[] = [
   },
   {
     id: 'steel-08',
-    src: '/src/assets/images/TUBULAR STEEL WORKS/steel 1.jpg',
+    src: '/assets/images/TUBULAR STEEL WORKS/steel 1.jpg',
     category: 'TUBULAR STEEL WORKS',
     categoryKey: 'tubular-steel-works',
     title: 'Tubular Steel Structural Erection',

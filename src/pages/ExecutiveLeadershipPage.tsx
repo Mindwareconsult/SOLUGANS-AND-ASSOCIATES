@@ -673,7 +673,7 @@ export const ExecutiveLeadershipPage: React.FC<ExecutiveLeadershipPageProps> = (
             <div className="lg:col-span-5">
               <div className="rounded-2xl overflow-hidden border border-neutral-800 aspect-[4/3] bg-neutral-900 shadow-2xl relative">
                 <img
-                  src="/src/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg"
+                  src="/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg"
                   alt="Radopin Supermarket Plaza Awka"
                   className="w-full h-full object-cover"
                   loading="lazy"

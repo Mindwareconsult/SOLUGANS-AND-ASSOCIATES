@@ -30,7 +30,7 @@ export const BLOG_POSTS: BlogPost[] = [
       name: 'Engr. Team Lead',
       role: 'Principal Engineer, Solugans & Associates'
     },
-    coverImage: '/src/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3129.JPG',
+    coverImage: '/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3129.JPG',
     excerpt: 'Embarking on a residential or commercial construction development in Nigeria requires strategic planning beyond simple architectural aesthetics. Here are the core technical, regulatory, and geological factors to assess before breaking ground.',
     keyTakeaways: [
       'Never skip a professional geotechnical soil test prior to foundation design.',
@@ -80,7 +80,7 @@ export const BLOG_POSTS: BlogPost[] = [
       name: 'Architectural Design Team',
       role: 'Design Directorate, Solugans & Associates'
     },
-    coverImage: '/src/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
+    coverImage: '/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
     excerpt: 'Up to 70% of a building’s total construction and lifecycle operating costs are locked in during the initial architectural schematic phase. Understanding this dynamic helps owners maximize luxury without inflating budgets.',
     keyTakeaways: [
       'Building geometry dictates structural complexity; complex multi-angle envelopes increase formwork and steel costs.',
@@ -116,7 +116,7 @@ export const BLOG_POSTS: BlogPost[] = [
       name: 'QA/QC Division',
       role: 'Quality Assurance, Solugans & Associates'
     },
-    coverImage: '/src/assets/images/REINFORCEMENT WORKS/IMG_6566.JPG',
+    coverImage: '/assets/images/REINFORCEMENT WORKS/IMG_6566.JPG',
     excerpt: 'A deep examination into structural testing protocols, rebar tensile standards, concrete water-cement ratios, and why professional engineering oversight is non-negotiable for lasting structures.',
     keyTakeaways: [
       'Substandard concrete batching and unverified steel rebars represent dangerous structural risks.',
@@ -151,7 +151,7 @@ export const BLOG_POSTS: BlogPost[] = [
       name: 'Project Advisory Team',
       role: 'Solugans & Associates'
     },
-    coverImage: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3747.JPG',
+    coverImage: '/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3747.JPG',
     excerpt: 'Commercial developments in bustling urban centres like Awka, Onitsha, and Nnewi require dedicated planning around customer vehicular circulation, power redundancy, and high-visibility facade design.',
     keyTakeaways: [
       'Sufficient parking and off-street delivery bays are critical to tenant retention.',
@@ -186,7 +186,7 @@ export const BLOG_POSTS: BlogPost[] = [
       name: 'Design & Structural Directorate',
       role: 'Solugans & Associates'
     },
-    coverImage: '/src/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
+    coverImage: '/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
     excerpt: 'Great architecture is impossible without fearless engineering, and disciplined engineering achieves its highest purpose through inspiring architecture. How Solugans integrates both under one roof.',
     keyTakeaways: [
       'Architecture creates the spatial experience; structural engineering gives it strength and durability.',

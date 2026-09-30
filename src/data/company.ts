@@ -119,7 +119,7 @@ export const COMPANY_INFO = {
       qualification: 'B.Eng (Civil Engineering)',
       institution: 'Nnamdi Azikiwe University, Awka (2004)',
       experienceYears: 20,
-      image: '/src/assets/images/headshot_okafor_peter_1790565597832.jpg',
+      image: '/assets/images/headshot_okafor_peter_1790565597832.jpg',
       regNumber: 'COREN R. 20,232 · MNSE 23,221',
       professionalBodies: ['Council for the Regulation of Engineering in Nigeria (COREN)', 'Nigerian Society of Engineers (MNSE)'],
       bio: 'Chartered civil and structural engineer with over two decades of practice in multi-storey structural framing, deep basement retaining structures, bridge approach engineering, and institutional buildings across Lagos, Enugu, and Anambra State.'
@@ -131,7 +131,7 @@ export const COMPANY_INFO = {
       qualification: 'B.Arch (Upper Division)',
       institution: 'University of Nigeria, Nsukka (1980)',
       experienceYears: 40,
-      image: '/src/assets/images/headshot_nwankwo_anthony_1790565609031.jpg',
+      image: '/assets/images/headshot_nwankwo_anthony_1790565609031.jpg',
       regNumber: 'ARCON F/1650 · MNIA M/1754',
       professionalBodies: ['Architects Registration Council of Nigeria (ARCON)', 'Nigerian Institute of Architects (MNIA)'],
       bio: 'Distinguished architect registered with ARCON since 1999. Brings four decades of architectural experience in state ministries of works, university campuses, and civic landmark buildings.'
@@ -143,7 +143,7 @@ export const COMPANY_INFO = {
       qualification: 'B.Eng (Electrical & Electronic Engineering)',
       institution: 'Nnamdi Azikiwe University, Awka (2017)',
       experienceYears: 8,
-      image: '/src/assets/images/headshot_anigbogu_collins_1790565619526.jpg',
+      image: '/assets/images/headshot_anigbogu_collins_1790565619526.jpg',
       regNumber: 'COREN R. 64,074 · MNSE',
       professionalBodies: ['Council for the Regulation of Engineering in Nigeria (COREN)', 'Nigerian Society of Engineers (MNSE)'],
       bio: 'Registered electrical engineer specializing in high-voltage substations, 33kV/0.415kV distribution networks, solar mini-grids, earthing integration into structural rebar, and commercial MEP reticulation.'
@@ -155,7 +155,7 @@ export const COMPANY_INFO = {
       qualification: 'B.Eng (Mechanical Engineering)',
       institution: 'University of Nigeria, Nsukka (2005)',
       experienceYears: 18,
-      image: '/src/assets/images/headshot_ohakanu_samuel_1790565669763.jpg',
+      image: '/assets/images/headshot_ohakanu_samuel_1790565669763.jpg',
       regNumber: 'COREN R. 26,082 · MNSE 27,455',
       professionalBodies: ['COREN Registered Engineer', 'Nigerian Society of Engineers (MNSE)'],
       bio: 'Registered mechanical engineer overseeing building mechanical services, HVAC air handling systems, water supply and drainage networks, and commercial fire suppression installations.'
@@ -165,7 +165,7 @@ export const COMPANY_INFO = {
       title: 'Director',
       role: 'Corporate Governance & Procurement',
       qualification: 'Business Administration',
-      image: '/src/assets/images/headshot_akigwe_michael_1790565679922.jpg',
+      image: '/assets/images/headshot_akigwe_michael_1790565679922.jpg',
       bio: 'Executive Director of Solugans & Associates, overseeing corporate procurement partnerships, statutory compliance, and strategic client alliances.'
     }
   ] as TeamMember[],
@@ -177,7 +177,7 @@ export const COMPANY_INFO = {
       role: 'Site Engineer',
       qualification: 'Civil Engineering (Federal Polytechnic Oko, 2016/2017)',
       experienceYears: 10,
-      image: '/src/assets/images/headshot_anigbogu_uche_1790565690897.jpg',
+      image: '/assets/images/headshot_anigbogu_uche_1790565690897.jpg',
       bio: 'A seasoned civil site engineer with a decade of field experience managing concrete pours, rebar placement, and precision foundation alignments.'
     },
     {
@@ -185,7 +185,7 @@ export const COMPANY_INFO = {
       role: 'Structural Engineer',
       qualification: 'Civil Engineering (Federal Polytechnic Oko, 2020/2021)',
       experienceYears: 5,
-      image: '/src/assets/images/headshot_ebubechukwu_ifeanyi_1790565702858.jpg',
+      image: '/assets/images/headshot_ebubechukwu_ifeanyi_1790565702858.jpg',
       bio: 'Specialist in structural detailing, beam-and-column load capacity analysis, and reinforcement inspection.'
     },
     {
@@ -214,7 +214,7 @@ export const COMPANY_INFO = {
       role: 'Quantity Surveyor',
       qualification: 'Quantity Surveying (Federal Polytechnic Oko, 2020)',
       experienceYears: 4,
-      image: '/src/assets/images/headshot_maureen_ezondu_1790565630188.jpg',
+      image: '/assets/images/headshot_maureen_ezondu_1790565630188.jpg',
       bio: 'Cost engineer preparing detailed Bills of Quantities (BOQ), material schedules, and interim valuation audits.'
     },
     {

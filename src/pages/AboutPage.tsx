@@ -121,7 +121,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-5">
               <div className="rounded-xl overflow-hidden border border-neutral-800 aspect-[4/5] bg-neutral-900 shadow-2xl relative group">
                 <img
-                  src="/src/assets/images/RETAINING WALL WORK/team work.JPG"
+                  src="/assets/images/RETAINING WALL WORK/team work.JPG"
                   alt="Solugans engineering site team on active project supervision"
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-103"
                   loading="lazy"
@@ -271,6 +271,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   alt={EXECUTIVE_DATA.fullName}
                   className="w-full h-full object-cover object-top transform transition-transform duration-700 ease-out group-hover:scale-103"
                   loading="lazy"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src !== window.location.origin + EXECUTIVE_DATA.altImage) {
+                      target.src = EXECUTIVE_DATA.altImage;
+                    }
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent opacity-75 group-hover:opacity-60 transition-opacity" />
                 

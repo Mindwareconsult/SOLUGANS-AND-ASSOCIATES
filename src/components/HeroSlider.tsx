@@ -47,7 +47,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
     {
       id: 1,
       projectSlug: 'residential-buildings-portfolio',
-      image: '/src/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
+      image: '/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
       discipline: 'ARCHITECTURAL DESIGN & CIVIL EXECUTION',
       tagline: 'WE PLAN · WE DESIGN · WE BUILD',
       headlineMain: 'Engineering Ideas',
@@ -60,7 +60,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
     {
       id: 2,
       projectSlug: 'radopin-supermarket-awka',
-      image: '/src/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
+      image: '/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
       discipline: 'COMMERCIAL ARCHITECTURE & RETAIL PLAZAS',
       tagline: 'HIGH-VISIBILITY COMMERCIAL LANDMARKS',
       headlineMain: 'Commercial Retail &',
@@ -73,7 +73,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
     {
       id: 3,
       projectSlug: 'tubular-steel-space-frames',
-      image: '/src/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
+      image: '/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
       discipline: 'STRUCTURAL STEEL & SPACE FRAMES',
       tagline: 'WIDE-SPAN STRUCTURAL FABRICATION',
       headlineMain: 'Tubular Steel Space Frames',
@@ -86,7 +86,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
     {
       id: 4,
       projectSlug: 'residential-country-home-aguleri',
-      image: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg',
+      image: '/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg',
       discipline: 'SUPERSTRUCTURE & BUILDING CONSTRUCTION',
       tagline: 'MULTI-LEVEL STRUCTURAL EXECUTION',
       headlineMain: 'Structural Integrity',
@@ -99,7 +99,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
     {
       id: 5,
       projectSlug: 'basement-retaining-wall-portfolio',
-      image: '/src/assets/images/BASEMENT EXCAVATION/IMG_2744.JPG',
+      image: '/assets/images/BASEMENT EXCAVATION/IMG_2744.JPG',
       discipline: 'CIVIL & STRUCTURAL ENGINEERING QA/QC',
       tagline: 'RIGOROUS RESIDENT SUPERVISION',
       headlineMain: 'Empirical Engineering &',

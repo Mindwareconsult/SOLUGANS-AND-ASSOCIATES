@@ -46,7 +46,7 @@ export const EXECUTIVE_DATA = {
   professionalDesignations: 'Architect | Entrepreneur | Community Leader | Youth Advocate',
   company: 'Solugans & Associates Engineering Ltd.',
   image: '/SCEO.jpg',
-  altImage: '/src/assets/images/headshot_arc_uganeme_emeka_ceo.jpg',
+  altImage: '/assets/images/headshot_arc_uganeme_emeka_ceo.jpg',
   motto: 'Tested by Service, Trusted by the People.',
   
   summary: 'An architect, entrepreneur and community leader whose professional journey reflects a sustained commitment to design excellence, construction, responsible leadership and community development.',

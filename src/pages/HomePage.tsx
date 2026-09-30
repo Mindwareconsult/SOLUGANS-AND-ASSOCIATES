@@ -122,32 +122,32 @@ export const HomePage: React.FC<HomePageProps> = ({
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
             {[
               {
-                src: '/src/assets/images/BASEMENT EXCAVATION/IMG_2744.JPG',
+                src: '/assets/images/BASEMENT EXCAVATION/IMG_2744.JPG',
                 category: 'BASEMENT EXCAVATION',
                 caption: 'Excavation & site formation'
               },
               {
-                src: '/src/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3129.JPG',
+                src: '/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3129.JPG',
                 category: 'SUB-STRUCTURAL WORKS',
                 caption: 'Foundation blinding concrete'
               },
               {
-                src: '/src/assets/images/REINFORCEMENT WORKS/IMG_6566.JPG',
+                src: '/assets/images/REINFORCEMENT WORKS/IMG_6566.JPG',
                 category: 'REINFORCEMENT WORKS',
                 caption: 'Suspended slab rebar mat'
               },
               {
-                src: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6567.JPG',
+                src: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6567.JPG',
                 category: 'COLUMNS & BEAMS',
                 caption: 'Column starter rebar cages'
               },
               {
-                src: '/src/assets/images/RETAINING WALL WORK/team work.JPG',
+                src: '/assets/images/RETAINING WALL WORK/team work.JPG',
                 category: 'RETAINING WALL WORK',
                 caption: 'Engineers on retaining wall'
               },
               {
-                src: '/src/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
+                src: '/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
                 category: 'TUBULAR STEEL WORKS',
                 caption: 'Space frame truss welding'
               }

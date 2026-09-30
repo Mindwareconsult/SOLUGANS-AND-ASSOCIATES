@@ -56,19 +56,19 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'Completed',
     featured: true,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
+    coverImage: '/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
     photoNote: 'Original photographic plates from company profile section "COMMERCIAL BUILDINGS" (Pages 1–2, 36–48) featuring verified commercial projects including Radopin Supermarket Plaza and Cichotel Hotel Extension in Awka.',
     gallery: [
       {
-        url: '/src/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
+        url: '/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
         caption: 'Radopin Supermarket Plaza & Commercial Complex, Aroma Junction, Awka — Multi-level commercial retail facade and entrance.'
       },
       {
-        url: '/src/assets/images/COMMERCIAL BUILDING/commercial_office_cichotel.jpg',
+        url: '/assets/images/COMMERCIAL BUILDING/commercial_office_cichotel.jpg',
         caption: 'Cichotel Classique Commercial Extension, Awka — Exterior panoramic scenic glass elevator tower and solar glazed curtain wall.'
       },
       {
-        url: '/src/assets/images/COMMERCIAL BUILDING/commercial_retail_complex.jpg',
+        url: '/assets/images/COMMERCIAL BUILDING/commercial_retail_complex.jpg',
         caption: 'Commercial Retail Plaza & Showroom Complex — Wide-span storefronts and commercial office suites.'
       }
     ],
@@ -114,30 +114,30 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'Completed',
     featured: true,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
+    coverImage: '/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
     gallery: [
       {
-        url: '/src/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
+        url: '/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
         caption: 'Executive residential country villa constructed by Solugans & Associates Engineering Ltd.'
       },
       {
-        url: '/src/assets/images/RESIDENTIAL BUILDING/residential building a.jpg',
+        url: '/assets/images/RESIDENTIAL BUILDING/residential building a.jpg',
         caption: 'Classical residential mansion featuring monumental entrance columns and portico.'
       },
       {
-        url: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg',
+        url: '/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg',
         caption: 'Residential Country Home at Ameze Village, Aguleri (Mr. Primus Odili) — Structural framework execution.'
       },
       {
-        url: '/src/assets/images/RESIDENTIAL BUILDING/residential building construction.jpg',
+        url: '/assets/images/RESIDENTIAL BUILDING/residential building construction.jpg',
         caption: 'Multi-storey luxury residential duplex construction envelope.'
       },
       {
-        url: '/src/assets/images/RESIDENTIAL BUILDING/IMG_6637.JPG',
+        url: '/assets/images/RESIDENTIAL BUILDING/IMG_6637.JPG',
         caption: 'Residential superstructure and upper-level parapet beams.'
       },
       {
-        url: '/src/assets/images/RESIDENTIAL BUILDING/IMG_6952.JPG',
+        url: '/assets/images/RESIDENTIAL BUILDING/IMG_6952.JPG',
         caption: 'Precision blockwork laying and lintel casting on residential site.'
       }
     ],
@@ -183,24 +183,24 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'Completed',
     featured: true,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg',
+    coverImage: '/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg',
     photoNote: 'Original photographic plate directly labeled "residential country home at AMEZE VILLAGE AGULERI" cross-referenced with Completed Projects Register S/N 18.',
     generalCategorySlug: 'residential-buildings-portfolio',
     gallery: [
       {
-        url: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg',
+        url: '/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg',
         caption: 'Residential Country Home at Ameze Village, Aguleri for Mr. Primus Odili — Structural envelope under construction.'
       },
       {
-        url: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3717.JPG',
+        url: '/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3717.JPG',
         caption: 'Upper-level suspended slab formwork, propping, and structural reinforcement.'
       },
       {
-        url: '/src/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3773.JPG',
+        url: '/assets/images/BUILDINGS UNDER CONDTRUCTION/IMG_3773.JPG',
         caption: 'Roof deck structural beam framing and perimeter parapet casting.'
       },
       {
-        url: '/src/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
+        url: '/assets/images/RESIDENTIAL BUILDING/residential building 1.jpg',
         caption: 'Completed residential country villa architectural elevation.'
       }
     ],
@@ -246,26 +246,26 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'Completed',
     featured: true,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/REINFORCEMENT WORKS/IMG_6566.JPG',
+    coverImage: '/assets/images/REINFORCEMENT WORKS/IMG_6566.JPG',
     gallery: [
       {
-        url: '/src/assets/images/REINFORCEMENT WORKS/IMG_6566.JPG',
+        url: '/assets/images/REINFORCEMENT WORKS/IMG_6566.JPG',
         caption: 'Suspended slab rebar mat rigging and electrical conduit placement prior to concrete pour.'
       },
       {
-        url: '/src/assets/images/REINFORCEMENT WORKS/IMG_6470.JPG',
+        url: '/assets/images/REINFORCEMENT WORKS/IMG_6470.JPG',
         caption: 'Heavy foundation rebar grid assembly and longitudinal bar lap tying.'
       },
       {
-        url: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6567.JPG',
+        url: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6567.JPG',
         caption: 'Reinforcement of Columns & Beams — Vertical column starter bars with stirrup links.'
       },
       {
-        url: '/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6568.JPG',
+        url: '/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6568.JPG',
         caption: 'Reinforcement of Columns & Beams — Beam-column moment junction rebar anchorage.'
       },
       {
-        url: '/src/assets/images/EARTHING WORK ON REINFORCEMENT/IMG_20170819_114918.jpg',
+        url: '/assets/images/EARTHING WORK ON REINFORCEMENT/IMG_20170819_114918.jpg',
         caption: 'Earthing Work on Reinforcement — Copper ground tape bonded to foundation rebar.'
       }
     ],
@@ -311,22 +311,22 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'Completed',
     featured: true,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/BASEMENT EXCAVATION/IMG_2744.JPG',
+    coverImage: '/assets/images/BASEMENT EXCAVATION/IMG_2744.JPG',
     gallery: [
       {
-        url: '/src/assets/images/BASEMENT EXCAVATION/IMG_2744.JPG',
+        url: '/assets/images/BASEMENT EXCAVATION/IMG_2744.JPG',
         caption: 'Basement Excavation — Deep subterranean mechanical excavation and perimeter formation.'
       },
       {
-        url: '/src/assets/images/BASEMENT EXCAVATION/IMG_2754.JPG',
+        url: '/assets/images/BASEMENT EXCAVATION/IMG_2754.JPG',
         caption: 'Basement Excavation — Earth retention cut and perimeter trenching by Solugans & Associates.'
       },
       {
-        url: '/src/assets/images/BASEMENT EXCAVATION/IMG_2767.JPG',
+        url: '/assets/images/BASEMENT EXCAVATION/IMG_2767.JPG',
         caption: 'Basement Excavation — Pit leveling and sub-grade preparation.'
       },
       {
-        url: '/src/assets/images/RETAINING WALL WORK/team work.JPG',
+        url: '/assets/images/RETAINING WALL WORK/team work.JPG',
         caption: 'Retaining Wall Work — Solugans engineering site team collaborating on reinforced retaining wall construction.'
       }
     ],
@@ -372,18 +372,18 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'Completed',
     featured: false,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3129.JPG',
+    coverImage: '/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3129.JPG',
     gallery: [
       {
-        url: '/src/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3129.JPG',
+        url: '/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3129.JPG',
         caption: 'Sub-Structural Works — Blinding concrete placement and foundation footing reinforcement grid.'
       },
       {
-        url: '/src/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3123.JPG',
+        url: '/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3123.JPG',
         caption: 'Sub-Structural Works — Deep foundation pit excavation and sub-grade preparation.'
       },
       {
-        url: '/src/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3124.JPG',
+        url: '/assets/images/SUB-STRUCTURAL WORKS (FOUNDATION WORK)/IMG_3124.JPG',
         caption: 'Sub-Structural Works — Foundation ground beam trenching and soil stabilization.'
       }
     ],
@@ -428,22 +428,22 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'Completed',
     featured: false,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
+    coverImage: '/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
     gallery: [
       {
-        url: '/src/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
+        url: '/assets/images/TUBULAR STEEL WORKS/20180706_110913.jpg',
         caption: 'Tubular Steel Works — Circular hollow section welding and space frame truss assembly.'
       },
       {
-        url: '/src/assets/images/TUBULAR STEEL WORKS/20180717_101441.jpg',
+        url: '/assets/images/TUBULAR STEEL WORKS/20180717_101441.jpg',
         caption: 'Tubular Steel Works — Roof truss hoisting and anchorage to reinforced concrete ring beams.'
       },
       {
-        url: '/src/assets/images/TUBULAR STEEL WORKS/IMG_20180413_174309 (2).jpg',
+        url: '/assets/images/TUBULAR STEEL WORKS/IMG_20180413_174309 (2).jpg',
         caption: 'Tubular Steel Works — Precision welded tubular steel truss node detailing.'
       },
       {
-        url: '/src/assets/images/TUBULAR STEEL WORKS/IMG_20180719_000502_882.jpg',
+        url: '/assets/images/TUBULAR STEEL WORKS/IMG_20180719_000502_882.jpg',
         caption: 'Tubular Steel Works — Overhead canopy steel skeleton framing in situ.'
       }
     ],
@@ -488,15 +488,15 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'Completed',
     featured: true,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/STAIRCASE CONSTRUCTION/staircase_cantilever_foyer.jpg',
+    coverImage: '/assets/images/STAIRCASE CONSTRUCTION/staircase_cantilever_foyer.jpg',
     photoNote: 'Original photographic documentation from company profile section "STAIRCASE CONSTRUCTION" (Pages 130–133) illustrating cantilever helical staircase engineering and formwork.',
     gallery: [
       {
-        url: '/src/assets/images/STAIRCASE CONSTRUCTION/staircase_cantilever_foyer.jpg',
+        url: '/assets/images/STAIRCASE CONSTRUCTION/staircase_cantilever_foyer.jpg',
         caption: 'Helical & Spiral Cantilever Staircase — Curved monolithic concrete casting and smooth soffit in luxury foyer.'
       },
       {
-        url: '/src/assets/images/STAIRCASE CONSTRUCTION/staircase_helical_formwork.jpg',
+        url: '/assets/images/STAIRCASE CONSTRUCTION/staircase_helical_formwork.jpg',
         caption: 'Helical Staircase Curved Formwork & Rebar — Precision curved timber shuttering and torsional reinforcement tying.'
       }
     ],
@@ -541,16 +541,16 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'Completed',
     featured: true,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
+    coverImage: '/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
     photoNote: 'Commercial retail supermarket plaza contract verified in Completed Projects Register S/N 38 & Ongoing S/N 4. Original photographic plate from company profile "COMMERCIAL BUILDINGS" (Pages 1, 2, 40).',
     generalCategorySlug: 'commercial-buildings-portfolio',
     gallery: [
       {
-        url: '/src/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
+        url: '/assets/images/COMMERCIAL BUILDING/commercial_plaza_radopin.jpg',
         caption: 'Radopin Supermarket Plaza at Aroma Junction, Awka — Built commercial exterior featuring signature composite red facade and wide retail glazed entrance.'
       },
       {
-        url: '/src/assets/images/COMMERCIAL BUILDING/commercial_retail_complex.jpg',
+        url: '/assets/images/COMMERCIAL BUILDING/commercial_retail_complex.jpg',
         caption: 'Commercial retail front and customer parking concourse.'
       }
     ],
@@ -596,12 +596,12 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'In Progress',
     featured: true,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/COMMERCIAL BUILDING/commercial_office_cichotel.jpg',
+    coverImage: '/assets/images/COMMERCIAL BUILDING/commercial_office_cichotel.jpg',
     photoNote: 'Active multi-storey hotel extension contract verified in Ongoing Projects Register S/N 10 (PDF Page 257). Original photographic plate from company profile Page 37.',
     generalCategorySlug: 'commercial-buildings-portfolio',
     gallery: [
       {
-        url: '/src/assets/images/COMMERCIAL BUILDING/commercial_office_cichotel.jpg',
+        url: '/assets/images/COMMERCIAL BUILDING/commercial_office_cichotel.jpg',
         caption: 'Cichotel Hotel Extension, Awka — External panoramic scenic glass elevator shaft and blue solar-reflective curtain walling under active execution.'
       }
     ],
@@ -828,12 +828,12 @@ export const PROJECTS_DATA: ProjectItem[] = [
     status: 'In Progress',
     featured: true,
     hasSpecificPhoto: true,
-    coverImage: '/src/assets/images/COMMERCIAL BUILDING/commercial_retail_complex.jpg',
+    coverImage: '/assets/images/COMMERCIAL BUILDING/commercial_retail_complex.jpg',
     photoNote: 'Commercial showroom contract verified in Ongoing Projects Register S/N 1 (PDF Page 257) & Completed Projects Register S/N 11 (PDF Page 249). Commercial plate from company profile section "COMMERCIAL BUILDINGS" (Pages 1, 36).',
     generalCategorySlug: 'commercial-buildings-portfolio',
     gallery: [
       {
-        url: '/src/assets/images/COMMERCIAL BUILDING/commercial_retail_complex.jpg',
+        url: '/assets/images/COMMERCIAL BUILDING/commercial_retail_complex.jpg',
         caption: 'Commercial Electronics Showroom & Retail Complex at Kwata Junction, Awka — Glazed commercial facade and display floor plate.'
       }
     ],

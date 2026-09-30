@@ -270,7 +270,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onSelectProject, onN
                 className="relative rounded-2xl overflow-hidden border border-neutral-800/90 shadow-2xl bg-neutral-900 aspect-[4/3] sm:aspect-[16/11] group cursor-pointer"
               >
                 <img
-                  src="/src/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg"
+                  src="/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg"
                   alt="Residential Country Home at Ameze Village, Aguleri under construction by Solugans & Associates Engineering Ltd."
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
                   loading="eager"

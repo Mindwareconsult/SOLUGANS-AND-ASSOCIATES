@@ -87,7 +87,7 @@ export const IntroBrandSection: React.FC<SectionProps> = ({ onNavigate }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-xl overflow-hidden border border-neutral-800/90 shadow-2xl bg-neutral-900 aspect-[4/5] group">
               <img
-                src="/src/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg"
+                src="/assets/images/BUILDINGS UNDER CONDTRUCTION/residential country home at AMEZE VILLAGE AGULERI.jpg"
                 alt="Solugans Construction Project at Ameze Village, Aguleri"
                 className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-103"
                 loading="lazy"
@@ -314,7 +314,7 @@ export const ArchitectureEngineeringSplit: React.FC<SectionProps> = ({ onNavigat
             <div className="space-y-4">
               <div className="rounded-xl overflow-hidden border border-neutral-800 aspect-[4/5] bg-neutral-900 shadow-xl">
                 <img
-                  src="/src/assets/images/RESIDENTIAL BUILDING/residential building a.jpg"
+                  src="/assets/images/RESIDENTIAL BUILDING/residential building a.jpg"
                   alt="Classical Residential Villa with Monumental Portico by Solugans & Associates"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -334,7 +334,7 @@ export const ArchitectureEngineeringSplit: React.FC<SectionProps> = ({ onNavigat
               </div>
               <div className="rounded-xl overflow-hidden border border-neutral-800 aspect-[4/5] bg-neutral-900 shadow-xl">
                 <img
-                  src="/src/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6567.JPG"
+                  src="/assets/images/REINFOREMENT OF COLUMNS AND BEAMS/IMG_6567.JPG"
                   alt="On-site Structural Reinforcement and Column Alignment by Solugans Engineers"
                   className="w-full h-full object-cover"
                   loading="lazy"
