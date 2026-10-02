@@ -349,21 +349,25 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
               </div>
 
               {/* Project Mini Thumbnail Frame */}
-              <div 
+              <button 
+                type="button"
                 onClick={() => handleInspectProject(currentSlide.projectSlug)}
-                className="group relative aspect-[16/9] rounded-lg overflow-hidden border border-neutral-800 bg-neutral-900 cursor-pointer"
+                aria-label={`View case study: ${currentSlide.projectTitle}`}
+                className="group relative aspect-[16/9] w-full rounded-lg overflow-hidden border border-neutral-800 bg-neutral-900 cursor-pointer text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
               >
                 <img
                   src={currentSlide.image}
                   alt={currentSlide.projectTitle}
                   className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
                 <div className="absolute bottom-2 right-2 px-2 py-1 rounded bg-neutral-950/80 border border-neutral-700 text-[10px] font-medium text-white flex items-center gap-1">
                   <span>View Case Study</span>
                   <ArrowUpRight className="w-3 h-3 text-orange-400" />
                 </div>
-              </div>
+              </button>
 
               {/* Title & Metadata */}
               <div className="space-y-1.5">

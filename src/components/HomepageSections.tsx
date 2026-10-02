@@ -91,6 +91,7 @@ export const IntroBrandSection: React.FC<SectionProps> = ({ onNavigate }) => {
                 alt="Solugans Construction Project at Ameze Village, Aguleri"
                 className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-103"
                 loading="lazy"
+                decoding="async"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent opacity-80" />
@@ -318,6 +319,7 @@ export const ArchitectureEngineeringSplit: React.FC<SectionProps> = ({ onNavigat
                   alt="Classical Residential Villa with Monumental Portico by Solugans & Associates"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -338,6 +340,7 @@ export const ArchitectureEngineeringSplit: React.FC<SectionProps> = ({ onNavigat
                   alt="On-site Structural Reinforcement and Column Alignment by Solugans Engineers"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                 />
               </div>

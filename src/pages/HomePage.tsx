@@ -11,6 +11,7 @@ import {
 import { StatsSection } from '../components/StatsSection';
 import { ProjectCard } from '../components/ProjectCard';
 import { ServiceCard } from '../components/ServiceCard';
+import { AwkaProjectReachMap } from '../components/AwkaProjectReachMap';
 import { PROJECTS_DATA, ProjectItem } from '../data/projects';
 import { SERVICES_DATA, ServiceDetail } from '../data/services';
 import { ArrowRight, Sparkles } from 'lucide-react';
@@ -152,16 +153,19 @@ export const HomePage: React.FC<HomePageProps> = ({
                 caption: 'Space frame truss welding'
               }
             ].map((photo, pIdx) => (
-              <div
+              <button
                 key={pIdx}
+                type="button"
                 onClick={() => onNavigate('projects')}
-                className="group relative rounded-xl overflow-hidden border border-neutral-800/90 aspect-[4/3] bg-neutral-900 cursor-pointer shadow-md hover:border-neutral-700 transition-all duration-300"
+                aria-label={`View ${photo.category} projects - ${photo.caption}`}
+                className="group relative rounded-xl overflow-hidden border border-neutral-800/90 aspect-[4/3] bg-neutral-900 cursor-pointer shadow-md hover:border-neutral-700 transition-all duration-300 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
               >
                 <img
                   src={photo.src}
                   alt={`${photo.category} by Solugans & Associates`}
                   className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-108"
                   loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity" />
@@ -173,13 +177,19 @@ export const HomePage: React.FC<HomePageProps> = ({
                     {photo.caption}
                   </div>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 4. Integrated Capabilities & Services */}
+      {/* 4C. Interactive Awka & Regional Project Reach Map */}
+      <AwkaProjectReachMap 
+        onNavigate={onNavigate} 
+        onSelectProject={onSelectProject} 
+      />
+
+      {/* 5. Integrated Capabilities & Services */}
       <section className="py-20 lg:py-28 bg-neutral-900/30 border-b border-neutral-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">

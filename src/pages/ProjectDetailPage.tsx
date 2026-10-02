@@ -132,15 +132,19 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
       {/* Full-Bleed Featured Cover Media or Technical Specification Banner */}
       <section className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {project.coverImage ? (
-          <div 
+          <button 
+            type="button"
             onClick={() => project.gallery.length > 0 && openLightbox(0)}
-            className={`relative aspect-[4/3] sm:aspect-[16/9] w-full rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl ${
-              project.gallery.length > 0 ? 'group cursor-pointer' : ''
+            aria-label={project.gallery.length > 0 ? `Click to expand photo gallery for ${project.title}` : project.title}
+            className={`relative aspect-[4/3] sm:aspect-[16/9] w-full rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl text-left ${
+              project.gallery.length > 0 ? 'group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500' : 'cursor-default'
             }`}
           >
             <img
               src={project.coverImage}
               alt={project.title}
+              loading="eager"
+              decoding="async"
               className="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-102"
               referrerPolicy="no-referrer"
             />
@@ -149,12 +153,12 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
             {/* Enlarge Trigger */}
             {project.gallery.length > 0 && (
               <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 rounded-md bg-neutral-950/80 backdrop-blur-md border border-neutral-700 text-xs font-medium text-white group-hover:bg-orange-600 transition-colors shadow-lg">
-                <Maximize2 className="w-3.5 h-3.5" />
+                <Maximize2 className="w-3.5 h-3.5" aria-hidden="true" />
                 <span className="hidden sm:inline">Click to Expand Gallery ({project.gallery.length} Images)</span>
                 <span className="sm:hidden">Expand ({project.gallery.length} Photos)</span>
               </div>
             )}
-          </div>
+          </button>
         ) : (
           <div className="w-full rounded-xl border border-neutral-800 bg-neutral-900/60 p-8 sm:p-12 relative overflow-hidden text-center space-y-4 shadow-xl bg-blueprint-grid">
             <div className="w-16 h-16 rounded-full bg-neutral-800/80 border border-neutral-700 flex items-center justify-center mx-auto text-orange-400">
@@ -287,21 +291,25 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
 
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                     {project.gallery.map((img, idx) => (
-                      <div
+                      <button
                         key={idx}
+                        type="button"
                         onClick={() => openLightbox(idx)}
-                        className="group relative aspect-[4/3] rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 cursor-pointer shadow-md"
+                        aria-label={`View full photo: ${img.caption}`}
+                        className="group relative aspect-[4/3] rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 cursor-pointer shadow-md text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
                       >
                         <img
                           src={img.url}
                           alt={img.caption}
+                          loading="lazy"
+                          decoding="async"
                           className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-108"
                           referrerPolicy="no-referrer"
                         />
                         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                          <Maximize2 className="w-5 h-5 text-orange-400" />
+                          <Maximize2 className="w-5 h-5 text-orange-400" aria-hidden="true" />
                         </div>
-                      </div>
+                      </button>
                     ))}
                   </div>
                 </div>

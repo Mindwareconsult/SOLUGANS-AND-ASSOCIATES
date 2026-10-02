@@ -42,15 +42,26 @@ export const Header: React.FC<HeaderProps> = ({ currentRoute, onNavigate }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Prevent background scroll when mobile navigation drawer is open
+  // Prevent background scroll and add Escape key listener when mobile drawer or dropdowns are open
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
     }
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setMobileMenuOpen(false);
+        setCompanyDropdownOpen(false);
+        setServicesDropdownOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
     return () => {
       document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
     };
   }, [mobileMenuOpen]);
 
@@ -92,7 +103,7 @@ export const Header: React.FC<HeaderProps> = ({ currentRoute, onNavigate }) => {
             </button>
 
             {/* Zone 2: Navigation Links (Desktop: 768px and up) */}
-            <nav className="hidden md:flex items-center gap-0.5 lg:gap-1.5 xl:gap-2">
+            <nav aria-label="Main Navigation" className="hidden md:flex items-center gap-0.5 lg:gap-1.5 xl:gap-2">
               <button
                 onClick={() => handleNavClick('home')}
                 className={`px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium transition-colors rounded-md relative whitespace-nowrap ${
@@ -121,6 +132,8 @@ export const Header: React.FC<HeaderProps> = ({ currentRoute, onNavigate }) => {
                       : 'text-neutral-300 hover:text-white'
                   }`}
                   aria-expanded={companyDropdownOpen}
+                  aria-haspopup="true"
+                  id="company-nav-button"
                 >
                   <span>Company</span>
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${companyDropdownOpen ? 'rotate-180 text-orange-400' : 'text-neutral-400'}`} />
@@ -185,6 +198,8 @@ export const Header: React.FC<HeaderProps> = ({ currentRoute, onNavigate }) => {
                       : 'text-neutral-300 hover:text-white'
                   }`}
                   aria-expanded={servicesDropdownOpen}
+                  aria-haspopup="true"
+                  id="services-nav-button"
                 >
                   <span>Services</span>
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180 text-orange-400' : 'text-neutral-400'}`} />
@@ -344,7 +359,7 @@ export const Header: React.FC<HeaderProps> = ({ currentRoute, onNavigate }) => {
 
       {/* Mobile Animated Slide-out Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-[60] md:hidden">
+        <div className="fixed inset-0 z-[60] md:hidden" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
           {/* Backdrop */}
           <div
             className="fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity"
@@ -358,14 +373,14 @@ export const Header: React.FC<HeaderProps> = ({ currentRoute, onNavigate }) => {
                 <BrandLogo size="sm" variant="color" />
                 <button
                   onClick={() => setMobileMenuOpen(false)}
-                  className="min-h-[40px] min-w-[40px] p-2 text-neutral-400 hover:text-white bg-neutral-900 border border-neutral-800 rounded-lg flex items-center justify-center active:scale-95 transition-all shrink-0"
+                  className="min-h-[40px] min-w-[40px] p-2 text-neutral-400 hover:text-white bg-neutral-900 border border-neutral-800 rounded-lg flex items-center justify-center active:scale-95 transition-all shrink-0 cursor-pointer"
                   aria-label="Close menu"
                 >
                   <X className="w-5 h-5" />
                 </button>
               </div>
 
-              <div className="py-5 space-y-1">
+              <nav aria-label="Mobile Navigation Links" className="py-5 space-y-1">
                 <button
                   onClick={() => handleNavClick('home')}
                   className={`w-full text-left px-3 py-2.5 text-base font-medium rounded-lg transition-colors flex items-center min-h-[44px] ${
@@ -469,7 +484,7 @@ export const Header: React.FC<HeaderProps> = ({ currentRoute, onNavigate }) => {
                 >
                   Contact Us
                 </button>
-              </div>
+              </nav>
             </div>
 
             {/* Bottom info */}

@@ -127,6 +127,7 @@ export const GalleryLightbox: React.FC<GalleryLightboxProps> = ({
             src={imageSrc}
             alt={currentItem.alt || currentItem.caption || 'Solugans engineering photograph'}
             className="max-w-full max-h-[76vh] object-contain rounded-lg shadow-2xl transition-transform duration-300"
+            decoding="async"
             referrerPolicy="no-referrer"
           />
         </div>

@@ -338,12 +338,16 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onNavigate }) => {
             ) : (
               <form onSubmit={handleApplySubmit} className="space-y-4">
                 <div className="space-y-1">
-                  <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+                  <label htmlFor="applicant-name" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
                     Full Name *
                   </label>
                   <input
+                    id="applicant-name"
+                    name="applicantName"
                     type="text"
                     required
+                    aria-required="true"
+                    autoComplete="name"
                     value={applicantName}
                     onChange={(e) => setApplicantName(e.target.value)}
                     placeholder="Engr. / Arc. Full Name"
@@ -352,12 +356,16 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onNavigate }) => {
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+                  <label htmlFor="applicant-email" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
                     Email Address *
                   </label>
                   <input
+                    id="applicant-email"
+                    name="applicantEmail"
                     type="email"
                     required
+                    aria-required="true"
+                    autoComplete="email"
                     value={applicantEmail}
                     onChange={(e) => setApplicantEmail(e.target.value)}
                     placeholder="name@example.com"
@@ -366,12 +374,16 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onNavigate }) => {
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+                  <label htmlFor="applicant-phone" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
                     Phone Number *
                   </label>
                   <input
+                    id="applicant-phone"
+                    name="applicantPhone"
                     type="tel"
                     required
+                    aria-required="true"
+                    autoComplete="tel"
                     value={applicantPhone}
                     onChange={(e) => setApplicantPhone(e.target.value)}
                     placeholder="+234 800 000 0000"
@@ -380,10 +392,12 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onNavigate }) => {
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+                  <label htmlFor="applicant-notes" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
                     Summary of Qualifications / Experience
                   </label>
                   <textarea
+                    id="applicant-notes"
+                    name="applicantNotes"
                     rows={3}
                     value={applicantNotes}
                     onChange={(e) => setApplicantNotes(e.target.value)}

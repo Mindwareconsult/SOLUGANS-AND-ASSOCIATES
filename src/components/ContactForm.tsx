@@ -164,7 +164,7 @@ export const ContactForm: React.FC = () => {
       </div>
 
       {errorMsg && (
-        <div className="p-3 bg-red-950/60 border border-red-800/80 rounded-md text-red-200 text-xs flex items-center gap-2">
+        <div role="alert" aria-live="polite" className="p-3 bg-red-950/60 border border-red-800/80 rounded-md text-red-200 text-xs flex items-center gap-2">
           <AlertCircle className="w-4 h-4 shrink-0 text-red-400" />
           <span>{errorMsg}</span>
         </div>
@@ -173,12 +173,16 @@ export const ContactForm: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {/* Full Name */}
         <div className="space-y-1.5">
-          <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+          <label htmlFor="contact-full-name" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
             Full Name <span className="text-orange-500">*</span>
           </label>
           <input
+            id="contact-full-name"
+            name="fullName"
             type="text"
             required
+            aria-required="true"
+            autoComplete="name"
             value={formData.fullName}
             onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
             placeholder="e.g. Chief Emeka Nnamdi"
@@ -188,11 +192,14 @@ export const ContactForm: React.FC = () => {
 
         {/* Company / Organization */}
         <div className="space-y-1.5">
-          <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+          <label htmlFor="contact-company" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
             Company / Organization (Optional)
           </label>
           <input
+            id="contact-company"
+            name="company"
             type="text"
+            autoComplete="organization"
             value={formData.company}
             onChange={(e) => setFormData({ ...formData, company: e.target.value })}
             placeholder="e.g. Apex Holdings Ltd"
@@ -202,12 +209,16 @@ export const ContactForm: React.FC = () => {
 
         {/* Email */}
         <div className="space-y-1.5">
-          <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+          <label htmlFor="contact-email" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
             Email Address <span className="text-orange-500">*</span>
           </label>
           <input
+            id="contact-email"
+            name="email"
             type="email"
             required
+            aria-required="true"
+            autoComplete="email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             placeholder="name@example.com"
@@ -217,12 +228,16 @@ export const ContactForm: React.FC = () => {
 
         {/* Phone */}
         <div className="space-y-1.5">
-          <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+          <label htmlFor="contact-phone" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
             Phone Number <span className="text-orange-500">*</span>
           </label>
           <input
+            id="contact-phone"
+            name="phone"
             type="tel"
             required
+            aria-required="true"
+            autoComplete="tel"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             placeholder="+234 803 000 0000"
@@ -232,10 +247,12 @@ export const ContactForm: React.FC = () => {
 
         {/* Project Type */}
         <div className="space-y-1.5">
-          <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+          <label htmlFor="contact-project-type" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
             Project Category
           </label>
           <select
+            id="contact-project-type"
+            name="projectType"
             value={formData.projectType}
             onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
             className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white outline-none transition-colors min-h-[44px] cursor-pointer"
@@ -250,10 +267,12 @@ export const ContactForm: React.FC = () => {
 
         {/* Project Location */}
         <div className="space-y-1.5">
-          <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+          <label htmlFor="contact-location" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
             Site Location
           </label>
           <input
+            id="contact-location"
+            name="location"
             type="text"
             value={formData.location}
             onChange={(e) => setFormData({ ...formData, location: e.target.value })}
@@ -264,10 +283,12 @@ export const ContactForm: React.FC = () => {
 
         {/* Estimated Budget */}
         <div className="space-y-1.5">
-          <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+          <label htmlFor="contact-budget-range" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
             Estimated Budget Framework
           </label>
           <select
+            id="contact-budget-range"
+            name="budgetRange"
             value={formData.budgetRange}
             onChange={(e) => setFormData({ ...formData, budgetRange: e.target.value })}
             className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white outline-none transition-colors min-h-[44px] cursor-pointer"
@@ -282,10 +303,12 @@ export const ContactForm: React.FC = () => {
 
         {/* Project Timeline */}
         <div className="space-y-1.5">
-          <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+          <label htmlFor="contact-timeline" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
             Target Timeline
           </label>
           <select
+            id="contact-timeline"
+            name="timeline"
             value={formData.timeline}
             onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
             className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-3.5 py-3 text-base sm:text-sm text-white outline-none transition-colors min-h-[44px] cursor-pointer"
@@ -301,11 +324,14 @@ export const ContactForm: React.FC = () => {
 
       {/* Message */}
       <div className="space-y-1.5">
-        <label className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
+        <label htmlFor="contact-message" className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
           Project Brief / Scope Details <span className="text-orange-500">*</span>
         </label>
         <textarea
+          id="contact-message"
+          name="message"
           required
+          aria-required="true"
           rows={4}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}

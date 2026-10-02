@@ -109,6 +109,7 @@ export const ExecutiveLeadershipPage: React.FC<ExecutiveLeadershipPageProps> = (
                   alt={EXECUTIVE_DATA.fullName}
                   className="w-full h-full object-cover object-top transform transition-transform duration-700 ease-out group-hover:scale-102"
                   loading="eager"
+                  decoding="async"
                   onError={(e) => {
                     // Fallback to alt image if needed
                     const target = e.currentTarget;
@@ -677,6 +678,7 @@ export const ExecutiveLeadershipPage: React.FC<ExecutiveLeadershipPageProps> = (
                   alt="Radopin Supermarket Plaza Awka"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent opacity-80" />
                 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-neutral-950/85 backdrop-blur-md border border-neutral-800 space-y-1">

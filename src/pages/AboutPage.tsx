@@ -125,6 +125,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   alt="Solugans engineering site team on active project supervision"
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-103"
                   loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent opacity-85" />
@@ -262,15 +263,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             
             {/* Left: Large Professional Portrait */}
             <div className="lg:col-span-5">
-              <div 
+              <button 
+                type="button"
                 onClick={() => onNavigate('about/leadership')}
-                className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl group cursor-pointer"
+                aria-label="Inspect Executive Leadership Profile: Arc. Uganeme Emeka Donatus"
+                className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl group cursor-pointer text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
               >
                 <img
                   src={EXECUTIVE_DATA.image}
                   alt={EXECUTIVE_DATA.fullName}
                   className="w-full h-full object-cover object-top transform transition-transform duration-700 ease-out group-hover:scale-103"
                   loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     const target = e.currentTarget;
                     if (target.src !== window.location.origin + EXECUTIVE_DATA.altImage) {
@@ -292,7 +296,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     <ArrowRight className="w-3.5 h-3.5" />
                   </span>
                 </div>
-              </div>
+              </button>
             </div>
 
             {/* Right: Editorial Narrative & CTA */}
@@ -417,6 +421,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             referrerPolicy="no-referrer"
                             className="w-full h-full object-cover object-top transform transition-transform duration-700 ease-out group-hover:scale-104"
                             loading="lazy"
+                            decoding="async"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
                         </>
@@ -512,6 +517,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             referrerPolicy="no-referrer"
                             className="w-full h-full object-cover object-top transform transition-transform duration-700 ease-out group-hover:scale-104"
                             loading="lazy"
+                            decoding="async"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-neutral-950/20 to-transparent opacity-60" />
                         </>

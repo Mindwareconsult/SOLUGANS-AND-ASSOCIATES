@@ -15,6 +15,7 @@ import {
 } from '../data/projects';
 import { ProjectCard } from '../components/ProjectCard';
 import { GalleryLightbox, LightboxImageItem } from '../components/GalleryLightbox';
+import { AwkaProjectReachMap } from '../components/AwkaProjectReachMap';
 import { 
   Building2, 
   LayoutGrid, 
@@ -48,8 +49,8 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onSelectProject, onN
   const [lightboxIndex, setLightboxIndex] = useState<number>(0);
   const [lightboxImages, setLightboxImages] = useState<LightboxImageItem[]>([]);
 
-  // Page section view: 'gallery' | 'case-studies' | 'completed-register' | 'ongoing-register'
-  const [activeSection, setActiveSection] = useState<'gallery' | 'case-studies' | 'completed-register' | 'ongoing-register'>('gallery');
+  // Page section view: 'gallery' | 'case-studies' | 'completed-register' | 'ongoing-register' | 'reach-map'
+  const [activeSection, setActiveSection] = useState<'gallery' | 'case-studies' | 'completed-register' | 'ongoing-register' | 'reach-map'>('gallery');
 
   // Case Studies filter & search
   const [caseStudyCategory, setCaseStudyCategory] = useState<string>('All');
@@ -62,6 +63,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onSelectProject, onN
   const [registerCategoryFilter, setRegisterCategoryFilter] = useState<string>('All');
 
   const galleryRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<HTMLDivElement>(null);
 
   // Dynamic category counts calculated directly from uploaded assets
   const categoryCounts = useMemo(() => getCategoryCounts(), []);
@@ -256,6 +258,21 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onSelectProject, onN
                 >
                   <Clock className="w-4 h-4 text-amber-400 shrink-0" />
                   <span>Active Ongoing Register (20)</span>
+                </button>
+
+                <button
+                  onClick={() => {
+                    setActiveSection('reach-map');
+                    mapRef.current?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className={`w-full sm:w-auto px-4 py-3 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center sm:justify-start gap-2 min-h-[44px] ${
+                    activeSection === 'reach-map'
+                      ? 'bg-orange-600 text-white shadow-lg shadow-orange-950/60'
+                      : 'bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800'
+                  }`}
+                >
+                  <MapPin className="w-4 h-4 text-orange-400 shrink-0" />
+                  <span>Awka Project Map</span>
                 </button>
               </div>
             </div>
@@ -653,19 +670,20 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onSelectProject, onN
               {/* Search & Layout */}
               <div className="flex items-center gap-3">
                 <div className="relative flex-1 sm:w-64">
-                  <Search className="w-3.5 h-3.5 text-neutral-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                  <Search className="w-3.5 h-3.5 text-neutral-500 absolute left-3 top-1/2 -translate-y-1/2" aria-hidden="true" />
                   <input
                     type="text"
                     value={caseStudySearch}
                     onChange={(e) => setCaseStudySearch(e.target.value)}
                     placeholder="Search projects, client, location..."
+                    aria-label="Search case studies by keyword, client, or location"
                     className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 text-xs text-white pl-9 pr-8 py-2 rounded-md outline-none"
                   />
                   {caseStudySearch && (
                     <button
                       onClick={() => setCaseStudySearch('')}
                       className="absolute right-2.5 top-1/2 -translate-y-1/2 text-neutral-500 hover:text-white cursor-pointer"
-                      aria-label="Clear search"
+                      aria-label="Clear search query"
                     >
                       <X className="w-3.5 h-3.5" />
                     </button>
@@ -775,12 +793,13 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onSelectProject, onN
               {/* Register Search and Filter */}
               <div className="flex flex-wrap items-center gap-3">
                 <div className="relative w-full sm:w-64">
-                  <Search className="w-3.5 h-3.5 text-neutral-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                  <Search className="w-3.5 h-3.5 text-neutral-500 absolute left-3 top-1/2 -translate-y-1/2" aria-hidden="true" />
                   <input
                     type="text"
                     value={registerSearch}
                     onChange={(e) => setRegisterSearch(e.target.value)}
                     placeholder="Search client or project..."
+                    aria-label="Search verified project register"
                     className="w-full bg-neutral-950 border border-neutral-800 focus:border-orange-500 text-xs text-white pl-9 pr-4 py-2 rounded-md outline-none"
                   />
                 </div>
@@ -788,6 +807,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onSelectProject, onN
                 <select
                   value={registerCategoryFilter}
                   onChange={(e) => setRegisterCategoryFilter(e.target.value)}
+                  aria-label="Filter project register by category"
                   className="bg-neutral-950 border border-neutral-800 text-xs text-neutral-300 py-2 px-3 rounded-md outline-none cursor-pointer"
                 >
                   <option value="All">All Categories</option>
@@ -863,6 +883,16 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onSelectProject, onN
           </div>
         </section>
       )}
+
+      {/* ================================================== */}
+      {/* 5B. INTERACTIVE AWKA & REGIONAL PROJECT REACH MAP */}
+      {/* ================================================== */}
+      <div ref={mapRef}>
+        <AwkaProjectReachMap 
+          onNavigate={onNavigate}
+          onSelectProject={onSelectProject}
+        />
+      </div>
 
       {/* ================================================== */}
       {/* 6. CTA SECTION */}

@@ -21,7 +21,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     return (
       <article
         onClick={onClick}
-        className="group relative bg-neutral-900/40 hover:bg-neutral-900/90 border border-neutral-800/80 hover:border-neutral-700 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-black/70 cursor-pointer p-4 sm:p-6 lg:p-7 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center"
+        role="button"
+        tabIndex={0}
+        aria-label={`View case study: ${project.title}`}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onClick?.();
+          }
+        }}
+        className="group relative bg-neutral-900/40 hover:bg-neutral-900/90 border border-neutral-800/80 hover:border-neutral-700 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-black/70 cursor-pointer p-4 sm:p-6 lg:p-7 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
       >
         {/* Left Media (7 cols) */}
         <div className="lg:col-span-7 relative aspect-[16/10] w-full rounded-lg overflow-hidden bg-neutral-950">
@@ -32,6 +41,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 alt={project.title}
                 className="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-104"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-neutral-950/20 to-transparent opacity-70 group-hover:opacity-40 transition-opacity" />
             </>
@@ -126,7 +136,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <article
       onClick={onClick}
-      className="group relative bg-neutral-900/50 hover:bg-neutral-900 border border-neutral-800/80 hover:border-neutral-700 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-black/70 cursor-pointer flex flex-col justify-between"
+      role="button"
+      tabIndex={0}
+      aria-label={`View case study: ${project.title}`}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick?.();
+        }
+      }}
+      className="group relative bg-neutral-900/50 hover:bg-neutral-900 border border-neutral-800/80 hover:border-neutral-700 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-black/70 cursor-pointer flex flex-col justify-between focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
     >
       <div>
         {/* Media Frame */}
@@ -138,6 +157,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 alt={project.title}
                 className="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-105"
                 loading="lazy"
+                decoding="async"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/20 to-transparent opacity-75 group-hover:opacity-45 transition-opacity duration-300" />

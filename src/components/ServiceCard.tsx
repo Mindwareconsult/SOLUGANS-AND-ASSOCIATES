@@ -54,7 +54,16 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, onClick }) =>
   return (
     <article
       onClick={onClick}
-      className="group relative bg-neutral-900/50 hover:bg-neutral-900/90 border border-neutral-800/80 hover:border-neutral-700 rounded-xl transition-all duration-300 hover:shadow-2xl hover:shadow-black/60 flex flex-col justify-between cursor-pointer overflow-hidden"
+      role="button"
+      tabIndex={0}
+      aria-label={`Learn more about ${service.title}`}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick?.();
+        }
+      }}
+      className="group relative bg-neutral-900/50 hover:bg-neutral-900/90 border border-neutral-800/80 hover:border-neutral-700 rounded-xl transition-all duration-300 hover:shadow-2xl hover:shadow-black/60 flex flex-col justify-between cursor-pointer overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
     >
       <div>
         {/* Optional Project Image Banner */}
@@ -65,6 +74,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, onClick }) =>
               alt={service.thumbnailAlt || service.title}
               className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
+              decoding="async"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent" />

@@ -72,6 +72,8 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
           <img
             src={post.coverImage}
             alt={post.title}
+            loading="eager"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>

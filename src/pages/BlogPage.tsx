@@ -33,12 +33,23 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onSelectPost, onNavigate }) 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <article
               onClick={() => onSelectPost(BLOG_POSTS[0])}
-              className="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-neutral-900/40 hover:bg-neutral-900 border border-neutral-800 rounded-xl p-6 sm:p-8 cursor-pointer transition-all duration-300"
+              role="button"
+              tabIndex={0}
+              aria-label={`Read technical article: ${BLOG_POSTS[0].title}`}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  onSelectPost(BLOG_POSTS[0]);
+                }
+              }}
+              className="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-neutral-900/40 hover:bg-neutral-900 border border-neutral-800 rounded-xl p-6 sm:p-8 cursor-pointer transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
             >
               <div className="lg:col-span-7 aspect-[16/10] rounded-lg overflow-hidden bg-neutral-950">
                 <img
                   src={BLOG_POSTS[0].coverImage}
                   alt={BLOG_POSTS[0].title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-104"
                 />
               </div>
@@ -50,11 +61,11 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onSelectPost, onNavigate }) 
                   </span>
                   <span>·</span>
                   <span className="flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5" />
+                    <Clock className="w-3.5 h-3.5" aria-hidden="true" />
                     {BLOG_POSTS[0].readTime}
                   </span>
                   <span>·</span>
-                  <span>{BLOG_POSTS[0].publishedDate}</span>
+                  <time dateTime={BLOG_POSTS[0].publishedDate}>{BLOG_POSTS[0].publishedDate}</time>
                 </div>
 
                 <h2 className="text-2xl sm:text-3xl font-bold text-white group-hover:text-orange-400 transition-colors font-display leading-snug">
@@ -67,7 +78,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onSelectPost, onNavigate }) 
 
                 <div className="pt-2 flex items-center gap-2 text-xs font-semibold text-orange-400 group-hover:text-orange-300">
                   <span>Read Full Technical Guide</span>
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                 </div>
               </div>
             </article>
@@ -83,13 +94,24 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onSelectPost, onNavigate }) 
               <article
                 key={post.id}
                 onClick={() => onSelectPost(post)}
-                className="group bg-neutral-900/40 hover:bg-neutral-900 border border-neutral-800 hover:border-neutral-700 rounded-xl overflow-hidden cursor-pointer transition-all duration-300 flex flex-col justify-between"
+                role="button"
+                tabIndex={0}
+                aria-label={`Read article: ${post.title}`}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    onSelectPost(post);
+                  }
+                }}
+                className="group bg-neutral-900/40 hover:bg-neutral-900 border border-neutral-800 hover:border-neutral-700 rounded-xl overflow-hidden cursor-pointer transition-all duration-300 flex flex-col justify-between focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
               >
                 <div>
                   <div className="aspect-[16/9] w-full overflow-hidden bg-neutral-950">
                     <img
                       src={post.coverImage}
                       alt={post.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-104"
                     />
                   </div>
